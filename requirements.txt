@@ -5,7 +5,7 @@ transformers==2.10.0
 requests==2.22.0
 botocore==1.12.210
 scipy==1.4.1
-tensorflow==1.14.0
+tensorflow==1.15.4
 numpy==1.18.1
 pyemd==0.5.1
 scikit_learn==0.23.1
