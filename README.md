@@ -61,5 +61,6 @@ python emd_task_distill.py  \
 --teacher_model ../model/$TASK_NAME/teacher/ \
 --student_model ../model/student/layer4/ \
 --task_name $TASK_NAME \
---output_dir ../model/$TASK_NAME/student/
+--output_dir ../model/$TASK_NAME/student/ \
+--beta 0.01 --theta 1
 ```
