@@ -752,13 +752,13 @@ def do_train(args):
 
                     tr_cls_loss += cls_loss.item()
                     if args.use_embedding and args.use_att and args.use_rep:
-                        loss = args.beta * (rep_loss + att_loss + embedding_loss) + cls_loss
+                        loss = args.beta * (args.theta * (rep_loss + att_loss) + embedding_loss) + cls_loss
                     elif args.use_att and args.use_rep:
-                        loss = args.beta * (rep_loss + att_loss) + cls_loss
+                        loss = args.beta * (args.theta * (rep_loss + att_loss)) + cls_loss
                     elif args.use_embedding and args.use_att:
-                        loss = args.beta * (att_loss + embedding_loss) + cls_loss
+                        loss = args.beta * (args.theta * att_loss + embedding_loss) + cls_loss
                     elif args.use_embedding and args.use_rep:
-                        loss = args.beta * (rep_loss + embedding_loss) + cls_loss
+                        loss = args.beta * (args.theta * rep_loss + embedding_loss) + cls_loss
                 elif not args.pred_distill:
                     if args.use_emd:
                         att_loss, rep_loss, att_student_weight, att_teacher_weight, rep_student_weight, rep_teacher_weight = \
@@ -924,6 +924,7 @@ if __name__ == "__main__":
     parser.add_argument("--one_step", default=True, type=str2bool)
     parser.add_argument("--new_pred_loss", default=True, type=str2bool)
     parser.add_argument("--beta", type=float, default=0.01)
+    parser.add_argument("--theta", type=float, default=1.0)
 
     # Not often modified
     parser.add_argument('--T', type=float, default=1.)
