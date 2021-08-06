@@ -64,3 +64,7 @@ python emd_task_distill.py  \
 --output_dir ../model/$TASK_NAME/student/ \
 --beta 0.01 --theta 1
 ```
+
+
+### update 2021/08/06
+We replace the layer weight update method with division by addition. In our experiments, this normalization method is better than softmax on some datasets.
