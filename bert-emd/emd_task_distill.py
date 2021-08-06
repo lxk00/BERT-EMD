@@ -298,8 +298,8 @@ def get_new_layer_weight(trans_matrix, distance_matrix, stu_layer_num, tea_layer
         if teacher_layer_weight[i] != 0:
             teacher_layer_weight[i] = weight_sum / teacher_layer_weight[i]
 
-    student_layer_weight = softmax(student_layer_weight / T)
-    teacher_layer_weight = softmax(teacher_layer_weight / T)
+    student_layer_weight = student_layer_weight / np.sum(student_layer_weight)
+    teacher_layer_weight = teacher_layer_weight / np.sum(teacher_layer_weight)
 
     if type_update == 'att':
         att_student_weight = student_layer_weight
@@ -421,12 +421,12 @@ def transformer_loss(student_atts, teacher_atts, student_reps, teacher_reps,
             logger.info('att_teacher_weight:{}'.format(att_teacher_weight))
             logger.info('rep_student_weight:{}'.format(rep_student_weight))
             logger.info('rep_teacher_weight:{}'.format(rep_teacher_weight))
-    if args.add_softmax:
-        att_student_weight = softmax(att_student_weight)
-        att_teacher_weight = softmax(att_teacher_weight)
 
-        rep_student_weight = softmax(rep_student_weight)
-        rep_teacher_weight = softmax(rep_teacher_weight)
+#       att_student_weight = att_student_weight / np.sum(att_student_weight)
+#       att_teacher_weight = att_teacher_weight / np.sum(att_teacher_weight)
+
+#       rep_student_weight = rep_student_weight / np.sum(rep_student_weight)
+#       rep_teacher_weight = rep_teacher_weight / np.sum(rep_student_weight)
     return att_loss, rep_loss
 
 def pkd_loss(student_atts, teacher_atts, student_reps, teacher_reps, device='cuda'):
