@@ -67,4 +67,4 @@ python emd_task_distill.py  \
 
 
 ### update 2021/08/06
-We replace the layer weight update method with division by addition. In our experiments, this normalization method is better than softmax on some datasets.
+We replace the layer weight update method with division by addition. In our experiments, this normalization method is better than softmax on some datasets. Wight can be in range from 1e-3 to 1e+3
