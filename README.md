@@ -18,7 +18,7 @@ pip install -r requirements.txt
 ```
 python download_glue_data.py --data_dir glue_data --tasks all
 ```
-[百度云](https://pan.baidu.com/s/1tl83ER8N5FfN6m9m9u0zyA?pwd=1234 ) for alternative
+[BaiduYun](https://pan.baidu.com/s/1tl83ER8N5FfN6m9m9u0zyA?pwd=1234 ) for alternative
 
 2. Get BERT-Base offical model from [here](https://storage.googleapis.com/bert_models/2020_02_20/uncased_L-12_H-768_A-12.zip), download and unzip to directory  `./model/bert_base_uncased`. Convert tf model to pytorch model:
 ``` sh
