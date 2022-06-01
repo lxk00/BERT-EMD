@@ -79,7 +79,7 @@ We add the hyperparameters for best-performing models as bellow and fixed some b
 #### Hyperparameters configurations for best-performing models
 
 |Layer Num|Task|alpha|beta|T_emd|T|Learning Rate|
-|----|----|----|----|----|----|----|----|
+| --- | --- | --- | --- | --- | --- | --- |
 |4|CoLA|1|0.001|5|1|2.00E-05|
 |4|MNLI|1|0.005|1|3|5.00E-05|
 |4|MRPC|1|0.001|10|1|2.00E-05|
