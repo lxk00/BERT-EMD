@@ -19,7 +19,7 @@ import csv
 import json
 import logging
 
-from bert_fineturn.file_utils import is_tf_available, is_torch_available
+from bert_finetune.file_utils import is_tf_available, is_torch_available
 
 
 logger = logging.getLogger(__name__)

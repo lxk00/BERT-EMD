@@ -19,7 +19,7 @@ import logging
 import os
 from scipy.stats import pearsonr, spearmanr
 from sklearn.metrics import matthews_corrcoef, f1_score
-from bert_fineturn.file_utils import is_tf_available
+from bert_finetune.file_utils import is_tf_available
 from .utils import DataProcessor, InputExample, InputFeatures
 import pandas as pd
 import numpy as np

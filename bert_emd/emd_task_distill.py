@@ -33,13 +33,13 @@ import torch
 from torch.utils.data import (DataLoader, RandomSampler, SequentialSampler, TensorDataset)
 from tqdm import tqdm, trange
 from torch.nn import CrossEntropyLoss, MSELoss
-from bert_fineturn.data_processor.glue import glue_compute_metrics as compute_metrics
-from bert_fineturn.data_processor.glue import glue_output_modes as output_modes
-from bert_fineturn.data_processor.glue import glue_processors as processors
-from tinybert.modeling import TinyBertForSequenceClassification, BertConfig, TinyBertForPreTraining
-from tinybert.tokenization import BertTokenizer
-from tinybert.optimization import BertAdam
-from tinybert.file_utils import WEIGHTS_NAME, CONFIG_NAME
+from bert_finetune.data_processor.glue import glue_compute_metrics as compute_metrics
+from bert_finetune.data_processor.glue import glue_output_modes as output_modes
+from bert_finetune.data_processor.glue import glue_processors as processors
+from bert_emd.modeling import TinyBertForSequenceClassification, BertConfig, TinyBertForPreTraining
+from bert_emd.tokenization import BertTokenizer
+from bert_emd.optimization import BertAdam
+from bert_emd.file_utils import WEIGHTS_NAME, CONFIG_NAME
 
 time.sleep(random.random())
 csv.field_size_limit(sys.maxsize)
@@ -323,12 +323,12 @@ def transformer_loss(student_atts, teacher_atts, student_reps, teacher_reps,
             for j in range(tea_layer_num):
                 teacher_rep = teacher_reps[j]
                 tmp_loss = loss_mse(student_rep, teacher_rep)
-                # tmp_loss = torch.nn.functional.normalize(tmp_loss, p=2, dim=2)
                 distance_matrix[i][j + stu_layer_num] = distance_matrix[j + stu_layer_num][i] = tmp_loss
 
         _, trans_matrix = emd_with_flow(student_layer_weight, teacher_layer_weight,
                                         distance_matrix.detach().cpu().numpy().astype('float64'))
-        # trans_matrix = trans_matrix
+        print(np.array(trans_matrix).shape)
+        print(np.array(distance_matrix).shape)
         rep_loss = torch.sum(torch.tensor(trans_matrix).cuda() * distance_matrix)
         return rep_loss, trans_matrix, distance_matrix
 
@@ -387,19 +387,12 @@ def transformer_loss(student_atts, teacher_atts, student_reps, teacher_reps,
     else:
         att_loss = torch.tensor(0)
     if args.use_rep:
-        if args.embedding_emd:
-            rep_loss, rep_trans_matrix, rep_distance_matrix = \
-                embedding_rep_loss(student_reps, teacher_reps, rep_student_weight, rep_teacher_weight,
-                             stu_layer_num+1, tea_layer_num+1, device, loss_mse)
-            if args.update_weight:
-                get_new_layer_weight(rep_trans_matrix, rep_distance_matrix, stu_layer_num+1, tea_layer_num+1, T=T, type_update='xx')
-        else:
-            rep_loss, rep_trans_matrix, rep_distance_matrix = \
-                emd_rep_loss(student_reps, teacher_reps, rep_student_weight, rep_teacher_weight,
-                             stu_layer_num, tea_layer_num, device, loss_mse)
+        rep_loss, rep_trans_matrix, rep_distance_matrix = \
+            emd_rep_loss(student_reps, teacher_reps, rep_student_weight, rep_teacher_weight,
+                            stu_layer_num, tea_layer_num, device, loss_mse)
 
-            if args.update_weight:
-                get_new_layer_weight(rep_trans_matrix, rep_distance_matrix, stu_layer_num, tea_layer_num, T=T, type_update='xx')
+        if args.update_weight:
+            get_new_layer_weight(rep_trans_matrix, rep_distance_matrix, stu_layer_num, tea_layer_num, T=T, type_update='xx')
         rep_loss = rep_loss.to(device)
     else:
         rep_loss = torch.tensor(0)

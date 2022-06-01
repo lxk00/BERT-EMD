@@ -574,7 +574,7 @@ BERT_INPUTS_DOCSTRING = r"""
             :obj:`1` indicates the head is **not masked**, :obj:`0` indicates the head is **masked**.
         inputs_embeds (:obj:`torch.FloatTensor` of shape :obj:`(batch_size, sequence_length, hidden_size)`, `optional`, defaults to :obj:`None`):
             Optionally, instead of passing :obj:`input_ids` you can choose to directly pass an embedded representation.
-            This is useful if you want more control over how to bert_fineturn `input_ids` indices into associated vectors
+            This is useful if you want more control over how to bert_finetune `input_ids` indices into associated vectors
             than the model's internal embedding lookup matrix.
         encoder_hidden_states  (:obj:`torch.FloatTensor` of shape :obj:`(batch_size, sequence_length, hidden_size)`, `optional`, defaults to :obj:`None`):
             Sequence of hidden-states at the output of the last layer of the encoder. Used in the cross-attention

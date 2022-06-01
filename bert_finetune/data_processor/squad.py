@@ -7,8 +7,8 @@ from multiprocessing import Pool, cpu_count
 import numpy as np
 from tqdm import tqdm
 
-from bert_fineturn.file_utils import is_tf_available, is_torch_available
-from bert_fineturn.tokenization_bert import whitespace_tokenize
+from bert_finetune.file_utils import is_tf_available, is_torch_available
+from bert_finetune.tokenization_bert import whitespace_tokenize
 from .utils import DataProcessor
 
 

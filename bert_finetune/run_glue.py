@@ -31,15 +31,15 @@ import torch
 from torch.utils.data import DataLoader, RandomSampler, SequentialSampler, TensorDataset
 from torch.utils.data.distributed import DistributedSampler
 from tqdm import tqdm, trange
-from bert_fineturn.configuration_bert import BertConfig
-from bert_fineturn.data_processor.glue import glue_compute_metrics as compute_metrics
-from bert_fineturn.data_processor.glue import glue_convert_examples_to_features as convert_examples_to_features
-from bert_fineturn.data_processor.glue import glue_output_modes as output_modes
-from bert_fineturn.data_processor.glue import glue_processors as processors
-from bert_fineturn.file_utils import WEIGHTS_NAME
-from bert_fineturn.modeling_bert import BertForSequenceClassification
-from bert_fineturn.optimization import AdamW, get_linear_schedule_with_warmup
-from bert_fineturn.tokenization_bert import BertTokenizer
+from bert_finetune.configuration_bert import BertConfig
+from bert_finetune.data_processor.glue import glue_compute_metrics as compute_metrics
+from bert_finetune.data_processor.glue import glue_convert_examples_to_features as convert_examples_to_features
+from bert_finetune.data_processor.glue import glue_output_modes as output_modes
+from bert_finetune.data_processor.glue import glue_processors as processors
+from bert_finetune.file_utils import WEIGHTS_NAME
+from bert_finetune.modeling_bert import BertForSequenceClassification
+from bert_finetune.optimization import AdamW, get_linear_schedule_with_warmup
+from bert_finetune.tokenization_bert import BertTokenizer
 try:
     from torch.utils.tensorboard import SummaryWriter
 except ImportError:

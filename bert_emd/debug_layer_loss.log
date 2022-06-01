@@ -1,0 +1,2375 @@
+2022-06-01 02:19:47,931 The args: Namespace(T=1.0, T_emd=1, add_softmax=True, alpha=1, aug_train=False, beta=0.01, cache_dir='', data_dir='../glue_data/RTE/', data_url='', do_eval=False, do_lower_case=True, do_predict=False, emb_linear=False, eval_batch_size=64, eval_step=50, gradient_accumulation_steps=1, is_conv=False, is_teacher=True, learning_rate=3e-05, max_seq_len=128, max_seq_length=64, new_pred_loss=True, no_cuda=False, no_pretrain=False, num_train_epochs=10.0, one_step=True, output_dir='../model/RTE/student/Model__0', pkd=False, pred_distill=False, reduce_T=1.0, seed=67077, seperate=False, share_param=True, student_model='../model/student/layer4/', task_name='RTE', tb_onestep='', teacher_model='../model/RTE/teacher/', theta=1.0, tinybert=False, train_batch_size=32, update_weight=True, use_att=True, use_embedding=True, use_emd=True, use_init_weight=False, use_rep=True, warmup_proportion=0.1, weight_decay=0.0001)
+2022-06-01 02:19:51,450 device: cuda n_gpu: 8
+2022-06-01 02:19:51,451 
+pred_distill:False
+use_emd:True
+seperate:False
+train_epoch:10.0
+
+2022-06-01 02:20:42,506 The args: Namespace(T=1.0, T_emd=1, add_softmax=True, alpha=1, aug_train=False, beta=0.01, cache_dir='', data_dir='../glue_data/RTE/', data_url='', do_eval=False, do_lower_case=True, do_predict=False, emb_linear=False, eval_batch_size=64, eval_step=50, gradient_accumulation_steps=1, is_conv=False, is_teacher=True, learning_rate=3e-05, max_seq_len=128, max_seq_length=64, new_pred_loss=True, no_cuda=False, no_pretrain=False, num_train_epochs=10.0, one_step=True, output_dir='../model/RTE/student/Model__1', pkd=False, pred_distill=False, reduce_T=1.0, seed=25308, seperate=False, share_param=True, student_model='../model/student/layer4/', task_name='RTE', tb_onestep='', teacher_model='../model/RTE/teacher/', theta=1.0, tinybert=False, train_batch_size=32, update_weight=True, use_att=True, use_embedding=True, use_emd=True, use_init_weight=False, use_rep=True, warmup_proportion=0.1, weight_decay=0.0001)
+2022-06-01 02:20:45,975 device: cuda n_gpu: 8
+2022-06-01 02:20:45,977 
+pred_distill:False
+use_emd:True
+seperate:False
+train_epoch:10.0
+
+2022-06-01 02:21:10,659 The args: Namespace(T=1.0, T_emd=1, add_softmax=True, alpha=1, aug_train=False, beta=0.01, cache_dir='', data_dir='../data/glue_data/RTE/', data_url='', do_eval=False, do_lower_case=True, do_predict=False, emb_linear=False, eval_batch_size=64, eval_step=50, gradient_accumulation_steps=1, is_conv=False, is_teacher=True, learning_rate=3e-05, max_seq_len=128, max_seq_length=64, new_pred_loss=True, no_cuda=False, no_pretrain=False, num_train_epochs=10.0, one_step=True, output_dir='../model/RTE/student/Model__2', pkd=False, pred_distill=False, reduce_T=1.0, seed=69381, seperate=False, share_param=True, student_model='../model/student/layer4/', task_name='RTE', tb_onestep='', teacher_model='../model/RTE/teacher/', theta=1.0, tinybert=False, train_batch_size=32, update_weight=True, use_att=True, use_embedding=True, use_emd=True, use_init_weight=False, use_rep=True, warmup_proportion=0.1, weight_decay=0.0001)
+2022-06-01 02:21:14,290 device: cuda n_gpu: 8
+2022-06-01 02:21:14,293 
+pred_distill:False
+use_emd:True
+seperate:False
+train_epoch:10.0
+
+2022-06-01 02:21:14,359 Writing example 0 of 2490
+2022-06-01 02:21:14,360 *** Example ***
+2022-06-01 02:21:14,360 guid: train-0
+2022-06-01 02:21:14,360 tokens: [CLS] no weapons of mass destruction found in iraq yet . [SEP] weapons of mass destruction found in iraq . [SEP]
+2022-06-01 02:21:14,360 input_ids: 101 2053 4255 1997 3742 6215 2179 1999 5712 2664 1012 102 4255 1997 3742 6215 2179 1999 5712 1012 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-06-01 02:21:14,360 input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-06-01 02:21:14,361 segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-06-01 02:21:14,361 label: not_entailment
+2022-06-01 02:21:14,361 label_id: 1
+2022-06-01 02:21:16,690 Writing example 0 of 277
+2022-06-01 02:21:16,691 *** Example ***
+2022-06-01 02:21:16,691 guid: dev-0
+2022-06-01 02:21:16,691 tokens: [CLS] dana reeve , the widow of the actor christopher reeve , has died of lung cancer at age 44 , according to the christopher reeve foundation . [SEP] christopher reeve had an accident . [SEP]
+2022-06-01 02:21:16,691 input_ids: 101 11271 20726 1010 1996 7794 1997 1996 3364 5696 20726 1010 2038 2351 1997 11192 4456 2012 2287 4008 1010 2429 2000 1996 5696 20726 3192 1012 102 5696 20726 2018 2019 4926 1012 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-06-01 02:21:16,691 input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-06-01 02:21:16,691 segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-06-01 02:21:16,691 label: not_entailment
+2022-06-01 02:21:16,692 label_id: 1
+2022-06-01 02:21:17,146 Model config {
+  "_num_labels": 2,
+  "architectures": [
+    "BertForSequenceClassification"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": null,
+  "do_sample": false,
+  "early_stopping": false,
+  "eos_token_ids": null,
+  "finetuning_task": "rte",
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1"
+  },
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "is_decoder": false,
+  "is_encoder_decoder": false,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1
+  },
+  "layer_norm_eps": 1e-12,
+  "length_penalty": 1.0,
+  "max_length": 20,
+  "max_position_embeddings": 512,
+  "min_length": 0,
+  "model_type": "bert",
+  "no_repeat_ngram_size": 0,
+  "num_attention_heads": 12,
+  "num_beams": 1,
+  "num_hidden_layers": 12,
+  "num_return_sequences": 1,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": null,
+  "pre_trained": "",
+  "pruned_heads": {},
+  "repetition_penalty": 1.0,
+  "temperature": 1.0,
+  "top_k": 50,
+  "top_p": 1.0,
+  "torchscript": false,
+  "training": "",
+  "type_vocab_size": 2,
+  "use_bfloat16": false,
+  "vocab_size": 30522
+}
+
+2022-06-01 02:21:20,261 Loading model ../model/RTE/teacher/pytorch_model.bin
+2022-06-01 02:21:20,539 loading model...
+2022-06-01 02:21:20,629 done!
+2022-06-01 02:21:20,629 Weights of TinyBertForSequenceClassification not initialized from pretrained model: ['share_fit_dense.weight', 'share_fit_dense.bias', 'fit_denses.0.weight', 'fit_denses.0.bias', 'fit_denses.1.weight', 'fit_denses.1.bias', 'fit_denses.2.weight', 'fit_denses.2.bias', 'fit_denses.3.weight', 'fit_denses.3.bias', 'fit_denses.4.weight', 'fit_denses.4.bias', 'fit_denses.5.weight', 'fit_denses.5.bias', 'fit_denses.6.weight', 'fit_denses.6.bias', 'fit_denses.7.weight', 'fit_denses.7.bias', 'fit_denses.8.weight', 'fit_denses.8.bias', 'fit_denses.9.weight', 'fit_denses.9.bias', 'fit_denses.10.weight', 'fit_denses.10.bias', 'fit_denses.11.weight', 'fit_denses.11.bias', 'fit_denses.12.weight', 'fit_denses.12.bias']
+2022-06-01 02:21:24,065 Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "cell": {},
+  "emb_size": 312,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 312,
+  "initializer_range": 0.02,
+  "intermediate_size": 1200,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 4,
+  "output_attentions": true,
+  "output_hidden_states": true,
+  "pre_trained": "",
+  "structure": [],
+  "student": true,
+  "teacher_num_hidden_layers": 12,
+  "training": "",
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}
+
+2022-06-01 02:21:24,426 Loading model ../model/student/layer4/pytorch_model.bin
+2022-06-01 02:21:24,456 loading model...
+2022-06-01 02:21:24,467 done!
+2022-06-01 02:21:24,467 Weights of TinyBertForSequenceClassification not initialized from pretrained model: ['classifier.weight', 'classifier.bias', 'share_fit_dense.weight', 'share_fit_dense.bias']
+2022-06-01 02:21:24,467 Weights from pretrained model not used in TinyBertForSequenceClassification: ['cls.predictions.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.dense.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.LayerNorm.bias', 'cls.predictions.decoder.weight', 'cls.seq_relationship.weight', 'cls.seq_relationship.bias']
+2022-06-01 02:21:24,487 ***** Running training *****
+2022-06-01 02:21:24,487   Num examples = 2490
+2022-06-01 02:21:24,488   Batch size = 32
+2022-06-01 02:21:24,488   Num steps = 770
+2022-06-01 02:21:24,490 n: module.bert.embeddings.word_embeddings.weight
+2022-06-01 02:21:24,490 n: module.bert.embeddings.position_embeddings.weight
+2022-06-01 02:21:24,490 n: module.bert.embeddings.token_type_embeddings.weight
+2022-06-01 02:21:24,490 n: module.bert.embeddings.LayerNorm.weight
+2022-06-01 02:21:24,490 n: module.bert.embeddings.LayerNorm.bias
+2022-06-01 02:21:24,490 n: module.bert.encoder.layer.0.attention.self.query.weight
+2022-06-01 02:21:24,490 n: module.bert.encoder.layer.0.attention.self.query.bias
+2022-06-01 02:21:24,490 n: module.bert.encoder.layer.0.attention.self.key.weight
+2022-06-01 02:21:24,490 n: module.bert.encoder.layer.0.attention.self.key.bias
+2022-06-01 02:21:24,490 n: module.bert.encoder.layer.0.attention.self.value.weight
+2022-06-01 02:21:24,490 n: module.bert.encoder.layer.0.attention.self.value.bias
+2022-06-01 02:21:24,490 n: module.bert.encoder.layer.0.attention.output.dense.weight
+2022-06-01 02:21:24,490 n: module.bert.encoder.layer.0.attention.output.dense.bias
+2022-06-01 02:21:24,490 n: module.bert.encoder.layer.0.attention.output.LayerNorm.weight
+2022-06-01 02:21:24,490 n: module.bert.encoder.layer.0.attention.output.LayerNorm.bias
+2022-06-01 02:21:24,491 n: module.bert.encoder.layer.0.intermediate.dense.weight
+2022-06-01 02:21:24,491 n: module.bert.encoder.layer.0.intermediate.dense.bias
+2022-06-01 02:21:24,491 n: module.bert.encoder.layer.0.output.dense.weight
+2022-06-01 02:21:24,491 n: module.bert.encoder.layer.0.output.dense.bias
+2022-06-01 02:21:24,491 n: module.bert.encoder.layer.0.output.LayerNorm.weight
+2022-06-01 02:21:24,491 n: module.bert.encoder.layer.0.output.LayerNorm.bias
+2022-06-01 02:21:24,491 n: module.bert.encoder.layer.1.attention.self.query.weight
+2022-06-01 02:21:24,491 n: module.bert.encoder.layer.1.attention.self.query.bias
+2022-06-01 02:21:24,491 n: module.bert.encoder.layer.1.attention.self.key.weight
+2022-06-01 02:21:24,491 n: module.bert.encoder.layer.1.attention.self.key.bias
+2022-06-01 02:21:24,491 n: module.bert.encoder.layer.1.attention.self.value.weight
+2022-06-01 02:21:24,491 n: module.bert.encoder.layer.1.attention.self.value.bias
+2022-06-01 02:21:24,491 n: module.bert.encoder.layer.1.attention.output.dense.weight
+2022-06-01 02:21:24,491 n: module.bert.encoder.layer.1.attention.output.dense.bias
+2022-06-01 02:21:24,491 n: module.bert.encoder.layer.1.attention.output.LayerNorm.weight
+2022-06-01 02:21:24,491 n: module.bert.encoder.layer.1.attention.output.LayerNorm.bias
+2022-06-01 02:21:24,492 n: module.bert.encoder.layer.1.intermediate.dense.weight
+2022-06-01 02:21:24,492 n: module.bert.encoder.layer.1.intermediate.dense.bias
+2022-06-01 02:21:24,492 n: module.bert.encoder.layer.1.output.dense.weight
+2022-06-01 02:21:24,492 n: module.bert.encoder.layer.1.output.dense.bias
+2022-06-01 02:21:24,492 n: module.bert.encoder.layer.1.output.LayerNorm.weight
+2022-06-01 02:21:24,492 n: module.bert.encoder.layer.1.output.LayerNorm.bias
+2022-06-01 02:21:24,492 n: module.bert.encoder.layer.2.attention.self.query.weight
+2022-06-01 02:21:24,492 n: module.bert.encoder.layer.2.attention.self.query.bias
+2022-06-01 02:21:24,492 n: module.bert.encoder.layer.2.attention.self.key.weight
+2022-06-01 02:21:24,492 n: module.bert.encoder.layer.2.attention.self.key.bias
+2022-06-01 02:21:24,492 n: module.bert.encoder.layer.2.attention.self.value.weight
+2022-06-01 02:21:24,492 n: module.bert.encoder.layer.2.attention.self.value.bias
+2022-06-01 02:21:24,492 n: module.bert.encoder.layer.2.attention.output.dense.weight
+2022-06-01 02:21:24,492 n: module.bert.encoder.layer.2.attention.output.dense.bias
+2022-06-01 02:21:24,492 n: module.bert.encoder.layer.2.attention.output.LayerNorm.weight
+2022-06-01 02:21:24,492 n: module.bert.encoder.layer.2.attention.output.LayerNorm.bias
+2022-06-01 02:21:24,493 n: module.bert.encoder.layer.2.intermediate.dense.weight
+2022-06-01 02:21:24,493 n: module.bert.encoder.layer.2.intermediate.dense.bias
+2022-06-01 02:21:24,493 n: module.bert.encoder.layer.2.output.dense.weight
+2022-06-01 02:21:24,493 n: module.bert.encoder.layer.2.output.dense.bias
+2022-06-01 02:21:24,493 n: module.bert.encoder.layer.2.output.LayerNorm.weight
+2022-06-01 02:21:24,493 n: module.bert.encoder.layer.2.output.LayerNorm.bias
+2022-06-01 02:21:24,493 n: module.bert.encoder.layer.3.attention.self.query.weight
+2022-06-01 02:21:24,493 n: module.bert.encoder.layer.3.attention.self.query.bias
+2022-06-01 02:21:24,493 n: module.bert.encoder.layer.3.attention.self.key.weight
+2022-06-01 02:21:24,493 n: module.bert.encoder.layer.3.attention.self.key.bias
+2022-06-01 02:21:24,493 n: module.bert.encoder.layer.3.attention.self.value.weight
+2022-06-01 02:21:24,493 n: module.bert.encoder.layer.3.attention.self.value.bias
+2022-06-01 02:21:24,493 n: module.bert.encoder.layer.3.attention.output.dense.weight
+2022-06-01 02:21:24,493 n: module.bert.encoder.layer.3.attention.output.dense.bias
+2022-06-01 02:21:24,493 n: module.bert.encoder.layer.3.attention.output.LayerNorm.weight
+2022-06-01 02:21:24,494 n: module.bert.encoder.layer.3.attention.output.LayerNorm.bias
+2022-06-01 02:21:24,494 n: module.bert.encoder.layer.3.intermediate.dense.weight
+2022-06-01 02:21:24,494 n: module.bert.encoder.layer.3.intermediate.dense.bias
+2022-06-01 02:21:24,494 n: module.bert.encoder.layer.3.output.dense.weight
+2022-06-01 02:21:24,494 n: module.bert.encoder.layer.3.output.dense.bias
+2022-06-01 02:21:24,494 n: module.bert.encoder.layer.3.output.LayerNorm.weight
+2022-06-01 02:21:24,494 n: module.bert.encoder.layer.3.output.LayerNorm.bias
+2022-06-01 02:21:24,494 n: module.bert.pooler.dense.weight
+2022-06-01 02:21:24,494 n: module.bert.pooler.dense.bias
+2022-06-01 02:21:24,494 n: module.classifier.weight
+2022-06-01 02:21:24,494 n: module.classifier.bias
+2022-06-01 02:21:24,494 n: module.share_fit_dense.weight
+2022-06-01 02:21:24,494 n: module.share_fit_dense.bias
+2022-06-01 02:21:24,494 n: module.fit_denses.0.weight
+2022-06-01 02:21:24,494 n: module.fit_denses.0.bias
+2022-06-01 02:21:24,494 n: module.fit_denses.1.weight
+2022-06-01 02:21:24,495 n: module.fit_denses.1.bias
+2022-06-01 02:21:24,495 n: module.fit_denses.2.weight
+2022-06-01 02:21:24,495 n: module.fit_denses.2.bias
+2022-06-01 02:21:24,495 n: module.fit_denses.3.weight
+2022-06-01 02:21:24,495 n: module.fit_denses.3.bias
+2022-06-01 02:21:24,495 n: module.fit_denses.4.weight
+2022-06-01 02:21:24,495 n: module.fit_denses.4.bias
+2022-06-01 02:21:24,495 Total parameters: 15793178
+2022-06-01 02:21:56,559 The args: Namespace(T=1.0, T_emd=1, add_softmax=True, alpha=1, aug_train=False, beta=0.01, cache_dir='', data_dir='../data/glue_data/RTE/', data_url='', do_eval=False, do_lower_case=True, do_predict=False, emb_linear=False, eval_batch_size=64, eval_step=50, gradient_accumulation_steps=1, is_conv=False, is_teacher=True, learning_rate=3e-05, max_seq_len=128, max_seq_length=64, new_pred_loss=True, no_cuda=False, no_pretrain=False, num_train_epochs=10.0, one_step=True, output_dir='../model/RTE/student/Model__3', pkd=False, pred_distill=False, reduce_T=1.0, seed=27299, seperate=False, share_param=True, student_model='../model/student/layer4/', task_name='RTE', tb_onestep='', teacher_model='../model/RTE/teacher/', theta=1.0, tinybert=False, train_batch_size=32, update_weight=True, use_att=True, use_embedding=True, use_emd=True, use_init_weight=False, use_rep=True, warmup_proportion=0.1, weight_decay=0.0001)
+2022-06-01 02:22:00,535 device: cuda n_gpu: 1
+2022-06-01 02:22:00,537 
+pred_distill:False
+use_emd:True
+seperate:False
+train_epoch:10.0
+
+2022-06-01 02:22:00,591 Writing example 0 of 2490
+2022-06-01 02:22:00,592 *** Example ***
+2022-06-01 02:22:00,592 guid: train-0
+2022-06-01 02:22:00,592 tokens: [CLS] no weapons of mass destruction found in iraq yet . [SEP] weapons of mass destruction found in iraq . [SEP]
+2022-06-01 02:22:00,592 input_ids: 101 2053 4255 1997 3742 6215 2179 1999 5712 2664 1012 102 4255 1997 3742 6215 2179 1999 5712 1012 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-06-01 02:22:00,592 input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-06-01 02:22:00,592 segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-06-01 02:22:00,592 label: not_entailment
+2022-06-01 02:22:00,592 label_id: 1
+2022-06-01 02:22:02,885 Writing example 0 of 277
+2022-06-01 02:22:02,886 *** Example ***
+2022-06-01 02:22:02,886 guid: dev-0
+2022-06-01 02:22:02,886 tokens: [CLS] dana reeve , the widow of the actor christopher reeve , has died of lung cancer at age 44 , according to the christopher reeve foundation . [SEP] christopher reeve had an accident . [SEP]
+2022-06-01 02:22:02,886 input_ids: 101 11271 20726 1010 1996 7794 1997 1996 3364 5696 20726 1010 2038 2351 1997 11192 4456 2012 2287 4008 1010 2429 2000 1996 5696 20726 3192 1012 102 5696 20726 2018 2019 4926 1012 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-06-01 02:22:02,886 input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-06-01 02:22:02,886 segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-06-01 02:22:02,886 label: not_entailment
+2022-06-01 02:22:02,886 label_id: 1
+2022-06-01 02:22:03,374 Model config {
+  "_num_labels": 2,
+  "architectures": [
+    "BertForSequenceClassification"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": null,
+  "do_sample": false,
+  "early_stopping": false,
+  "eos_token_ids": null,
+  "finetuning_task": "rte",
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1"
+  },
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "is_decoder": false,
+  "is_encoder_decoder": false,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1
+  },
+  "layer_norm_eps": 1e-12,
+  "length_penalty": 1.0,
+  "max_length": 20,
+  "max_position_embeddings": 512,
+  "min_length": 0,
+  "model_type": "bert",
+  "no_repeat_ngram_size": 0,
+  "num_attention_heads": 12,
+  "num_beams": 1,
+  "num_hidden_layers": 12,
+  "num_return_sequences": 1,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": null,
+  "pre_trained": "",
+  "pruned_heads": {},
+  "repetition_penalty": 1.0,
+  "temperature": 1.0,
+  "top_k": 50,
+  "top_p": 1.0,
+  "torchscript": false,
+  "training": "",
+  "type_vocab_size": 2,
+  "use_bfloat16": false,
+  "vocab_size": 30522
+}
+
+2022-06-01 02:22:06,160 Loading model ../model/RTE/teacher/pytorch_model.bin
+2022-06-01 02:22:06,417 loading model...
+2022-06-01 02:22:06,479 done!
+2022-06-01 02:22:06,479 Weights of TinyBertForSequenceClassification not initialized from pretrained model: ['share_fit_dense.weight', 'share_fit_dense.bias', 'fit_denses.0.weight', 'fit_denses.0.bias', 'fit_denses.1.weight', 'fit_denses.1.bias', 'fit_denses.2.weight', 'fit_denses.2.bias', 'fit_denses.3.weight', 'fit_denses.3.bias', 'fit_denses.4.weight', 'fit_denses.4.bias', 'fit_denses.5.weight', 'fit_denses.5.bias', 'fit_denses.6.weight', 'fit_denses.6.bias', 'fit_denses.7.weight', 'fit_denses.7.bias', 'fit_denses.8.weight', 'fit_denses.8.bias', 'fit_denses.9.weight', 'fit_denses.9.bias', 'fit_denses.10.weight', 'fit_denses.10.bias', 'fit_denses.11.weight', 'fit_denses.11.bias', 'fit_denses.12.weight', 'fit_denses.12.bias']
+2022-06-01 02:22:09,317 Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "cell": {},
+  "emb_size": 312,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 312,
+  "initializer_range": 0.02,
+  "intermediate_size": 1200,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 4,
+  "output_attentions": true,
+  "output_hidden_states": true,
+  "pre_trained": "",
+  "structure": [],
+  "student": true,
+  "teacher_num_hidden_layers": 12,
+  "training": "",
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}
+
+2022-06-01 02:22:09,660 Loading model ../model/student/layer4/pytorch_model.bin
+2022-06-01 02:22:09,695 loading model...
+2022-06-01 02:22:09,706 done!
+2022-06-01 02:22:09,706 Weights of TinyBertForSequenceClassification not initialized from pretrained model: ['classifier.weight', 'classifier.bias', 'share_fit_dense.weight', 'share_fit_dense.bias']
+2022-06-01 02:22:09,706 Weights from pretrained model not used in TinyBertForSequenceClassification: ['cls.predictions.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.dense.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.LayerNorm.bias', 'cls.predictions.decoder.weight', 'cls.seq_relationship.weight', 'cls.seq_relationship.bias']
+2022-06-01 02:22:09,723 ***** Running training *****
+2022-06-01 02:22:09,724   Num examples = 2490
+2022-06-01 02:22:09,724   Batch size = 32
+2022-06-01 02:22:09,724   Num steps = 770
+2022-06-01 02:22:09,725 n: bert.embeddings.word_embeddings.weight
+2022-06-01 02:22:09,725 n: bert.embeddings.position_embeddings.weight
+2022-06-01 02:22:09,725 n: bert.embeddings.token_type_embeddings.weight
+2022-06-01 02:22:09,725 n: bert.embeddings.LayerNorm.weight
+2022-06-01 02:22:09,725 n: bert.embeddings.LayerNorm.bias
+2022-06-01 02:22:09,725 n: bert.encoder.layer.0.attention.self.query.weight
+2022-06-01 02:22:09,725 n: bert.encoder.layer.0.attention.self.query.bias
+2022-06-01 02:22:09,725 n: bert.encoder.layer.0.attention.self.key.weight
+2022-06-01 02:22:09,725 n: bert.encoder.layer.0.attention.self.key.bias
+2022-06-01 02:22:09,725 n: bert.encoder.layer.0.attention.self.value.weight
+2022-06-01 02:22:09,725 n: bert.encoder.layer.0.attention.self.value.bias
+2022-06-01 02:22:09,726 n: bert.encoder.layer.0.attention.output.dense.weight
+2022-06-01 02:22:09,726 n: bert.encoder.layer.0.attention.output.dense.bias
+2022-06-01 02:22:09,726 n: bert.encoder.layer.0.attention.output.LayerNorm.weight
+2022-06-01 02:22:09,726 n: bert.encoder.layer.0.attention.output.LayerNorm.bias
+2022-06-01 02:22:09,726 n: bert.encoder.layer.0.intermediate.dense.weight
+2022-06-01 02:22:09,726 n: bert.encoder.layer.0.intermediate.dense.bias
+2022-06-01 02:22:09,726 n: bert.encoder.layer.0.output.dense.weight
+2022-06-01 02:22:09,726 n: bert.encoder.layer.0.output.dense.bias
+2022-06-01 02:22:09,726 n: bert.encoder.layer.0.output.LayerNorm.weight
+2022-06-01 02:22:09,726 n: bert.encoder.layer.0.output.LayerNorm.bias
+2022-06-01 02:22:09,726 n: bert.encoder.layer.1.attention.self.query.weight
+2022-06-01 02:22:09,726 n: bert.encoder.layer.1.attention.self.query.bias
+2022-06-01 02:22:09,726 n: bert.encoder.layer.1.attention.self.key.weight
+2022-06-01 02:22:09,726 n: bert.encoder.layer.1.attention.self.key.bias
+2022-06-01 02:22:09,727 n: bert.encoder.layer.1.attention.self.value.weight
+2022-06-01 02:22:09,727 n: bert.encoder.layer.1.attention.self.value.bias
+2022-06-01 02:22:09,727 n: bert.encoder.layer.1.attention.output.dense.weight
+2022-06-01 02:22:09,727 n: bert.encoder.layer.1.attention.output.dense.bias
+2022-06-01 02:22:09,727 n: bert.encoder.layer.1.attention.output.LayerNorm.weight
+2022-06-01 02:22:09,727 n: bert.encoder.layer.1.attention.output.LayerNorm.bias
+2022-06-01 02:22:09,727 n: bert.encoder.layer.1.intermediate.dense.weight
+2022-06-01 02:22:09,727 n: bert.encoder.layer.1.intermediate.dense.bias
+2022-06-01 02:22:09,727 n: bert.encoder.layer.1.output.dense.weight
+2022-06-01 02:22:09,727 n: bert.encoder.layer.1.output.dense.bias
+2022-06-01 02:22:09,727 n: bert.encoder.layer.1.output.LayerNorm.weight
+2022-06-01 02:22:09,727 n: bert.encoder.layer.1.output.LayerNorm.bias
+2022-06-01 02:22:09,727 n: bert.encoder.layer.2.attention.self.query.weight
+2022-06-01 02:22:09,727 n: bert.encoder.layer.2.attention.self.query.bias
+2022-06-01 02:22:09,728 n: bert.encoder.layer.2.attention.self.key.weight
+2022-06-01 02:22:09,728 n: bert.encoder.layer.2.attention.self.key.bias
+2022-06-01 02:22:09,728 n: bert.encoder.layer.2.attention.self.value.weight
+2022-06-01 02:22:09,728 n: bert.encoder.layer.2.attention.self.value.bias
+2022-06-01 02:22:09,728 n: bert.encoder.layer.2.attention.output.dense.weight
+2022-06-01 02:22:09,728 n: bert.encoder.layer.2.attention.output.dense.bias
+2022-06-01 02:22:09,728 n: bert.encoder.layer.2.attention.output.LayerNorm.weight
+2022-06-01 02:22:09,728 n: bert.encoder.layer.2.attention.output.LayerNorm.bias
+2022-06-01 02:22:09,728 n: bert.encoder.layer.2.intermediate.dense.weight
+2022-06-01 02:22:09,728 n: bert.encoder.layer.2.intermediate.dense.bias
+2022-06-01 02:22:09,728 n: bert.encoder.layer.2.output.dense.weight
+2022-06-01 02:22:09,728 n: bert.encoder.layer.2.output.dense.bias
+2022-06-01 02:22:09,728 n: bert.encoder.layer.2.output.LayerNorm.weight
+2022-06-01 02:22:09,728 n: bert.encoder.layer.2.output.LayerNorm.bias
+2022-06-01 02:22:09,729 n: bert.encoder.layer.3.attention.self.query.weight
+2022-06-01 02:22:09,729 n: bert.encoder.layer.3.attention.self.query.bias
+2022-06-01 02:22:09,729 n: bert.encoder.layer.3.attention.self.key.weight
+2022-06-01 02:22:09,729 n: bert.encoder.layer.3.attention.self.key.bias
+2022-06-01 02:22:09,729 n: bert.encoder.layer.3.attention.self.value.weight
+2022-06-01 02:22:09,729 n: bert.encoder.layer.3.attention.self.value.bias
+2022-06-01 02:22:09,729 n: bert.encoder.layer.3.attention.output.dense.weight
+2022-06-01 02:22:09,729 n: bert.encoder.layer.3.attention.output.dense.bias
+2022-06-01 02:22:09,729 n: bert.encoder.layer.3.attention.output.LayerNorm.weight
+2022-06-01 02:22:09,729 n: bert.encoder.layer.3.attention.output.LayerNorm.bias
+2022-06-01 02:22:09,729 n: bert.encoder.layer.3.intermediate.dense.weight
+2022-06-01 02:22:09,729 n: bert.encoder.layer.3.intermediate.dense.bias
+2022-06-01 02:22:09,729 n: bert.encoder.layer.3.output.dense.weight
+2022-06-01 02:22:09,729 n: bert.encoder.layer.3.output.dense.bias
+2022-06-01 02:22:09,730 n: bert.encoder.layer.3.output.LayerNorm.weight
+2022-06-01 02:22:09,730 n: bert.encoder.layer.3.output.LayerNorm.bias
+2022-06-01 02:22:09,730 n: bert.pooler.dense.weight
+2022-06-01 02:22:09,730 n: bert.pooler.dense.bias
+2022-06-01 02:22:09,730 n: classifier.weight
+2022-06-01 02:22:09,730 n: classifier.bias
+2022-06-01 02:22:09,730 n: share_fit_dense.weight
+2022-06-01 02:22:09,730 n: share_fit_dense.bias
+2022-06-01 02:22:09,730 n: fit_denses.0.weight
+2022-06-01 02:22:09,730 n: fit_denses.0.bias
+2022-06-01 02:22:09,730 n: fit_denses.1.weight
+2022-06-01 02:22:09,730 n: fit_denses.1.bias
+2022-06-01 02:22:09,730 n: fit_denses.2.weight
+2022-06-01 02:22:09,730 n: fit_denses.2.bias
+2022-06-01 02:22:09,731 n: fit_denses.3.weight
+2022-06-01 02:22:09,731 n: fit_denses.3.bias
+2022-06-01 02:22:09,731 n: fit_denses.4.weight
+2022-06-01 02:22:09,731 n: fit_denses.4.bias
+2022-06-01 02:22:09,731 Total parameters: 15793178
+2022-06-01 02:27:03,657 The args: Namespace(T=1.0, T_emd=1, add_softmax=True, alpha=1, aug_train=False, beta=0.01, cache_dir='', data_dir='../data/glue_data/RTE/', data_url='', do_eval=False, do_lower_case=True, do_predict=False, emb_linear=False, embedding_emd=True, eval_batch_size=64, eval_step=50, gradient_accumulation_steps=1, is_conv=False, is_teacher=True, learning_rate=3e-05, max_seq_len=128, max_seq_length=64, new_pred_loss=True, no_cuda=False, no_pretrain=False, num_train_epochs=10.0, one_step=True, output_dir='../model/RTE/student/Model__4', pkd=False, pred_distill=False, reduce_T=1.0, seed=30700, seperate=False, share_param=True, student_model='../model/student/layer4/', task_name='RTE', tb_onestep='', teacher_model='../model/RTE/teacher/', theta=1.0, tinybert=False, train_batch_size=32, update_weight=True, use_att=True, use_embedding=True, use_emd=True, use_init_weight=False, use_rep=True, warmup_proportion=0.1, weight_decay=0.0001)
+2022-06-01 02:27:07,593 device: cuda n_gpu: 1
+2022-06-01 02:27:07,596 
+pred_distill:False
+use_emd:True
+seperate:False
+train_epoch:10.0
+
+2022-06-01 02:27:07,648 Writing example 0 of 2490
+2022-06-01 02:27:07,648 *** Example ***
+2022-06-01 02:27:07,648 guid: train-0
+2022-06-01 02:27:07,648 tokens: [CLS] no weapons of mass destruction found in iraq yet . [SEP] weapons of mass destruction found in iraq . [SEP]
+2022-06-01 02:27:07,648 input_ids: 101 2053 4255 1997 3742 6215 2179 1999 5712 2664 1012 102 4255 1997 3742 6215 2179 1999 5712 1012 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-06-01 02:27:07,649 input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-06-01 02:27:07,649 segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-06-01 02:27:07,649 label: not_entailment
+2022-06-01 02:27:07,649 label_id: 1
+2022-06-01 02:27:09,772 Writing example 0 of 277
+2022-06-01 02:27:09,773 *** Example ***
+2022-06-01 02:27:09,773 guid: dev-0
+2022-06-01 02:27:09,773 tokens: [CLS] dana reeve , the widow of the actor christopher reeve , has died of lung cancer at age 44 , according to the christopher reeve foundation . [SEP] christopher reeve had an accident . [SEP]
+2022-06-01 02:27:09,773 input_ids: 101 11271 20726 1010 1996 7794 1997 1996 3364 5696 20726 1010 2038 2351 1997 11192 4456 2012 2287 4008 1010 2429 2000 1996 5696 20726 3192 1012 102 5696 20726 2018 2019 4926 1012 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-06-01 02:27:09,773 input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-06-01 02:27:09,773 segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-06-01 02:27:09,773 label: not_entailment
+2022-06-01 02:27:09,773 label_id: 1
+2022-06-01 02:27:10,234 Model config {
+  "_num_labels": 2,
+  "architectures": [
+    "BertForSequenceClassification"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": null,
+  "do_sample": false,
+  "early_stopping": false,
+  "eos_token_ids": null,
+  "finetuning_task": "rte",
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1"
+  },
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "is_decoder": false,
+  "is_encoder_decoder": false,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1
+  },
+  "layer_norm_eps": 1e-12,
+  "length_penalty": 1.0,
+  "max_length": 20,
+  "max_position_embeddings": 512,
+  "min_length": 0,
+  "model_type": "bert",
+  "no_repeat_ngram_size": 0,
+  "num_attention_heads": 12,
+  "num_beams": 1,
+  "num_hidden_layers": 12,
+  "num_return_sequences": 1,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": null,
+  "pre_trained": "",
+  "pruned_heads": {},
+  "repetition_penalty": 1.0,
+  "temperature": 1.0,
+  "top_k": 50,
+  "top_p": 1.0,
+  "torchscript": false,
+  "training": "",
+  "type_vocab_size": 2,
+  "use_bfloat16": false,
+  "vocab_size": 30522
+}
+
+2022-06-01 02:27:13,140 Loading model ../model/RTE/teacher/pytorch_model.bin
+2022-06-01 02:27:13,399 loading model...
+2022-06-01 02:27:13,563 done!
+2022-06-01 02:27:13,564 Weights of TinyBertForSequenceClassification not initialized from pretrained model: ['share_fit_dense.weight', 'share_fit_dense.bias', 'fit_denses.0.weight', 'fit_denses.0.bias', 'fit_denses.1.weight', 'fit_denses.1.bias', 'fit_denses.2.weight', 'fit_denses.2.bias', 'fit_denses.3.weight', 'fit_denses.3.bias', 'fit_denses.4.weight', 'fit_denses.4.bias', 'fit_denses.5.weight', 'fit_denses.5.bias', 'fit_denses.6.weight', 'fit_denses.6.bias', 'fit_denses.7.weight', 'fit_denses.7.bias', 'fit_denses.8.weight', 'fit_denses.8.bias', 'fit_denses.9.weight', 'fit_denses.9.bias', 'fit_denses.10.weight', 'fit_denses.10.bias', 'fit_denses.11.weight', 'fit_denses.11.bias', 'fit_denses.12.weight', 'fit_denses.12.bias']
+2022-06-01 02:27:16,203 Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "cell": {},
+  "emb_size": 312,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 312,
+  "initializer_range": 0.02,
+  "intermediate_size": 1200,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 4,
+  "output_attentions": true,
+  "output_hidden_states": true,
+  "pre_trained": "",
+  "structure": [],
+  "student": true,
+  "teacher_num_hidden_layers": 12,
+  "training": "",
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}
+
+2022-06-01 02:27:16,573 Loading model ../model/student/layer4/pytorch_model.bin
+2022-06-01 02:27:16,611 loading model...
+2022-06-01 02:27:16,620 done!
+2022-06-01 02:27:16,620 Weights of TinyBertForSequenceClassification not initialized from pretrained model: ['classifier.weight', 'classifier.bias', 'share_fit_dense.weight', 'share_fit_dense.bias']
+2022-06-01 02:27:16,620 Weights from pretrained model not used in TinyBertForSequenceClassification: ['cls.predictions.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.dense.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.LayerNorm.bias', 'cls.predictions.decoder.weight', 'cls.seq_relationship.weight', 'cls.seq_relationship.bias']
+2022-06-01 02:27:16,640 ***** Running training *****
+2022-06-01 02:27:16,641   Num examples = 2490
+2022-06-01 02:27:16,641   Batch size = 32
+2022-06-01 02:27:16,641   Num steps = 770
+2022-06-01 02:27:16,642 n: bert.embeddings.word_embeddings.weight
+2022-06-01 02:27:16,642 n: bert.embeddings.position_embeddings.weight
+2022-06-01 02:27:16,642 n: bert.embeddings.token_type_embeddings.weight
+2022-06-01 02:27:16,642 n: bert.embeddings.LayerNorm.weight
+2022-06-01 02:27:16,642 n: bert.embeddings.LayerNorm.bias
+2022-06-01 02:27:16,642 n: bert.encoder.layer.0.attention.self.query.weight
+2022-06-01 02:27:16,642 n: bert.encoder.layer.0.attention.self.query.bias
+2022-06-01 02:27:16,642 n: bert.encoder.layer.0.attention.self.key.weight
+2022-06-01 02:27:16,642 n: bert.encoder.layer.0.attention.self.key.bias
+2022-06-01 02:27:16,642 n: bert.encoder.layer.0.attention.self.value.weight
+2022-06-01 02:27:16,642 n: bert.encoder.layer.0.attention.self.value.bias
+2022-06-01 02:27:16,643 n: bert.encoder.layer.0.attention.output.dense.weight
+2022-06-01 02:27:16,643 n: bert.encoder.layer.0.attention.output.dense.bias
+2022-06-01 02:27:16,643 n: bert.encoder.layer.0.attention.output.LayerNorm.weight
+2022-06-01 02:27:16,643 n: bert.encoder.layer.0.attention.output.LayerNorm.bias
+2022-06-01 02:27:16,643 n: bert.encoder.layer.0.intermediate.dense.weight
+2022-06-01 02:27:16,643 n: bert.encoder.layer.0.intermediate.dense.bias
+2022-06-01 02:27:16,643 n: bert.encoder.layer.0.output.dense.weight
+2022-06-01 02:27:16,643 n: bert.encoder.layer.0.output.dense.bias
+2022-06-01 02:27:16,643 n: bert.encoder.layer.0.output.LayerNorm.weight
+2022-06-01 02:27:16,643 n: bert.encoder.layer.0.output.LayerNorm.bias
+2022-06-01 02:27:16,643 n: bert.encoder.layer.1.attention.self.query.weight
+2022-06-01 02:27:16,643 n: bert.encoder.layer.1.attention.self.query.bias
+2022-06-01 02:27:16,643 n: bert.encoder.layer.1.attention.self.key.weight
+2022-06-01 02:27:16,643 n: bert.encoder.layer.1.attention.self.key.bias
+2022-06-01 02:27:16,644 n: bert.encoder.layer.1.attention.self.value.weight
+2022-06-01 02:27:16,644 n: bert.encoder.layer.1.attention.self.value.bias
+2022-06-01 02:27:16,644 n: bert.encoder.layer.1.attention.output.dense.weight
+2022-06-01 02:27:16,644 n: bert.encoder.layer.1.attention.output.dense.bias
+2022-06-01 02:27:16,644 n: bert.encoder.layer.1.attention.output.LayerNorm.weight
+2022-06-01 02:27:16,644 n: bert.encoder.layer.1.attention.output.LayerNorm.bias
+2022-06-01 02:27:16,644 n: bert.encoder.layer.1.intermediate.dense.weight
+2022-06-01 02:27:16,644 n: bert.encoder.layer.1.intermediate.dense.bias
+2022-06-01 02:27:16,644 n: bert.encoder.layer.1.output.dense.weight
+2022-06-01 02:27:16,644 n: bert.encoder.layer.1.output.dense.bias
+2022-06-01 02:27:16,644 n: bert.encoder.layer.1.output.LayerNorm.weight
+2022-06-01 02:27:16,644 n: bert.encoder.layer.1.output.LayerNorm.bias
+2022-06-01 02:27:16,644 n: bert.encoder.layer.2.attention.self.query.weight
+2022-06-01 02:27:16,644 n: bert.encoder.layer.2.attention.self.query.bias
+2022-06-01 02:27:16,644 n: bert.encoder.layer.2.attention.self.key.weight
+2022-06-01 02:27:16,645 n: bert.encoder.layer.2.attention.self.key.bias
+2022-06-01 02:27:16,645 n: bert.encoder.layer.2.attention.self.value.weight
+2022-06-01 02:27:16,645 n: bert.encoder.layer.2.attention.self.value.bias
+2022-06-01 02:27:16,645 n: bert.encoder.layer.2.attention.output.dense.weight
+2022-06-01 02:27:16,645 n: bert.encoder.layer.2.attention.output.dense.bias
+2022-06-01 02:27:16,645 n: bert.encoder.layer.2.attention.output.LayerNorm.weight
+2022-06-01 02:27:16,645 n: bert.encoder.layer.2.attention.output.LayerNorm.bias
+2022-06-01 02:27:16,645 n: bert.encoder.layer.2.intermediate.dense.weight
+2022-06-01 02:27:16,645 n: bert.encoder.layer.2.intermediate.dense.bias
+2022-06-01 02:27:16,645 n: bert.encoder.layer.2.output.dense.weight
+2022-06-01 02:27:16,645 n: bert.encoder.layer.2.output.dense.bias
+2022-06-01 02:27:16,645 n: bert.encoder.layer.2.output.LayerNorm.weight
+2022-06-01 02:27:16,645 n: bert.encoder.layer.2.output.LayerNorm.bias
+2022-06-01 02:27:16,645 n: bert.encoder.layer.3.attention.self.query.weight
+2022-06-01 02:27:16,646 n: bert.encoder.layer.3.attention.self.query.bias
+2022-06-01 02:27:16,646 n: bert.encoder.layer.3.attention.self.key.weight
+2022-06-01 02:27:16,646 n: bert.encoder.layer.3.attention.self.key.bias
+2022-06-01 02:27:16,646 n: bert.encoder.layer.3.attention.self.value.weight
+2022-06-01 02:27:16,646 n: bert.encoder.layer.3.attention.self.value.bias
+2022-06-01 02:27:16,646 n: bert.encoder.layer.3.attention.output.dense.weight
+2022-06-01 02:27:16,646 n: bert.encoder.layer.3.attention.output.dense.bias
+2022-06-01 02:27:16,646 n: bert.encoder.layer.3.attention.output.LayerNorm.weight
+2022-06-01 02:27:16,646 n: bert.encoder.layer.3.attention.output.LayerNorm.bias
+2022-06-01 02:27:16,646 n: bert.encoder.layer.3.intermediate.dense.weight
+2022-06-01 02:27:16,646 n: bert.encoder.layer.3.intermediate.dense.bias
+2022-06-01 02:27:16,646 n: bert.encoder.layer.3.output.dense.weight
+2022-06-01 02:27:16,646 n: bert.encoder.layer.3.output.dense.bias
+2022-06-01 02:27:16,646 n: bert.encoder.layer.3.output.LayerNorm.weight
+2022-06-01 02:27:16,646 n: bert.encoder.layer.3.output.LayerNorm.bias
+2022-06-01 02:27:16,647 n: bert.pooler.dense.weight
+2022-06-01 02:27:16,647 n: bert.pooler.dense.bias
+2022-06-01 02:27:16,647 n: classifier.weight
+2022-06-01 02:27:16,647 n: classifier.bias
+2022-06-01 02:27:16,647 n: share_fit_dense.weight
+2022-06-01 02:27:16,647 n: share_fit_dense.bias
+2022-06-01 02:27:16,647 n: fit_denses.0.weight
+2022-06-01 02:27:16,647 n: fit_denses.0.bias
+2022-06-01 02:27:16,647 n: fit_denses.1.weight
+2022-06-01 02:27:16,647 n: fit_denses.1.bias
+2022-06-01 02:27:16,647 n: fit_denses.2.weight
+2022-06-01 02:27:16,647 n: fit_denses.2.bias
+2022-06-01 02:27:16,647 n: fit_denses.3.weight
+2022-06-01 02:27:16,647 n: fit_denses.3.bias
+2022-06-01 02:27:16,647 n: fit_denses.4.weight
+2022-06-01 02:27:16,648 n: fit_denses.4.bias
+2022-06-01 02:27:16,648 Total parameters: 15793178
+2022-06-01 02:28:42,419 The args: Namespace(T=1.0, T_emd=1, add_softmax=True, alpha=1, aug_train=False, beta=0.01, cache_dir='', data_dir='../data/glue_data/RTE/', data_url='', do_eval=False, do_lower_case=True, do_predict=False, emb_linear=False, embedding_emd=True, eval_batch_size=64, eval_step=50, gradient_accumulation_steps=1, is_conv=False, is_teacher=True, learning_rate=3e-05, max_seq_len=128, max_seq_length=64, new_pred_loss=True, no_cuda=False, no_pretrain=False, num_train_epochs=10.0, one_step=True, output_dir='../model/RTE/student/Model__5', pkd=False, pred_distill=False, reduce_T=1.0, seed=26916, seperate=False, share_param=True, student_model='../model/student/layer4/', task_name='RTE', tb_onestep='', teacher_model='../model/RTE/teacher/', theta=1.0, tinybert=False, train_batch_size=32, update_weight=True, use_att=True, use_embedding=True, use_emd=True, use_init_weight=False, use_rep=True, warmup_proportion=0.1, weight_decay=0.0001)
+2022-06-01 02:28:46,306 device: cuda n_gpu: 1
+2022-06-01 02:28:46,307 
+pred_distill:False
+use_emd:True
+seperate:False
+train_epoch:10.0
+
+2022-06-01 02:28:46,352 Writing example 0 of 2490
+2022-06-01 02:28:46,352 *** Example ***
+2022-06-01 02:28:46,353 guid: train-0
+2022-06-01 02:28:46,353 tokens: [CLS] no weapons of mass destruction found in iraq yet . [SEP] weapons of mass destruction found in iraq . [SEP]
+2022-06-01 02:28:46,353 input_ids: 101 2053 4255 1997 3742 6215 2179 1999 5712 2664 1012 102 4255 1997 3742 6215 2179 1999 5712 1012 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-06-01 02:28:46,353 input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-06-01 02:28:46,353 segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-06-01 02:28:46,353 label: not_entailment
+2022-06-01 02:28:46,353 label_id: 1
+2022-06-01 02:28:48,448 Writing example 0 of 277
+2022-06-01 02:28:48,449 *** Example ***
+2022-06-01 02:28:48,449 guid: dev-0
+2022-06-01 02:28:48,449 tokens: [CLS] dana reeve , the widow of the actor christopher reeve , has died of lung cancer at age 44 , according to the christopher reeve foundation . [SEP] christopher reeve had an accident . [SEP]
+2022-06-01 02:28:48,449 input_ids: 101 11271 20726 1010 1996 7794 1997 1996 3364 5696 20726 1010 2038 2351 1997 11192 4456 2012 2287 4008 1010 2429 2000 1996 5696 20726 3192 1012 102 5696 20726 2018 2019 4926 1012 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-06-01 02:28:48,449 input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-06-01 02:28:48,450 segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-06-01 02:28:48,450 label: not_entailment
+2022-06-01 02:28:48,450 label_id: 1
+2022-06-01 02:28:48,855 Model config {
+  "_num_labels": 2,
+  "architectures": [
+    "BertForSequenceClassification"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": null,
+  "do_sample": false,
+  "early_stopping": false,
+  "eos_token_ids": null,
+  "finetuning_task": "rte",
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1"
+  },
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "is_decoder": false,
+  "is_encoder_decoder": false,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1
+  },
+  "layer_norm_eps": 1e-12,
+  "length_penalty": 1.0,
+  "max_length": 20,
+  "max_position_embeddings": 512,
+  "min_length": 0,
+  "model_type": "bert",
+  "no_repeat_ngram_size": 0,
+  "num_attention_heads": 12,
+  "num_beams": 1,
+  "num_hidden_layers": 12,
+  "num_return_sequences": 1,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": null,
+  "pre_trained": "",
+  "pruned_heads": {},
+  "repetition_penalty": 1.0,
+  "temperature": 1.0,
+  "top_k": 50,
+  "top_p": 1.0,
+  "torchscript": false,
+  "training": "",
+  "type_vocab_size": 2,
+  "use_bfloat16": false,
+  "vocab_size": 30522
+}
+
+2022-06-01 02:28:51,407 Loading model ../model/RTE/teacher/pytorch_model.bin
+2022-06-01 02:28:51,651 loading model...
+2022-06-01 02:28:51,716 done!
+2022-06-01 02:28:51,716 Weights of TinyBertForSequenceClassification not initialized from pretrained model: ['share_fit_dense.weight', 'share_fit_dense.bias', 'fit_denses.0.weight', 'fit_denses.0.bias', 'fit_denses.1.weight', 'fit_denses.1.bias', 'fit_denses.2.weight', 'fit_denses.2.bias', 'fit_denses.3.weight', 'fit_denses.3.bias', 'fit_denses.4.weight', 'fit_denses.4.bias', 'fit_denses.5.weight', 'fit_denses.5.bias', 'fit_denses.6.weight', 'fit_denses.6.bias', 'fit_denses.7.weight', 'fit_denses.7.bias', 'fit_denses.8.weight', 'fit_denses.8.bias', 'fit_denses.9.weight', 'fit_denses.9.bias', 'fit_denses.10.weight', 'fit_denses.10.bias', 'fit_denses.11.weight', 'fit_denses.11.bias', 'fit_denses.12.weight', 'fit_denses.12.bias']
+2022-06-01 02:28:54,158 Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "cell": {},
+  "emb_size": 312,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 312,
+  "initializer_range": 0.02,
+  "intermediate_size": 1200,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 4,
+  "output_attentions": true,
+  "output_hidden_states": true,
+  "pre_trained": "",
+  "structure": [],
+  "student": true,
+  "teacher_num_hidden_layers": 12,
+  "training": "",
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}
+
+2022-06-01 02:28:54,499 Loading model ../model/student/layer4/pytorch_model.bin
+2022-06-01 02:28:54,528 loading model...
+2022-06-01 02:28:54,537 done!
+2022-06-01 02:28:54,537 Weights of TinyBertForSequenceClassification not initialized from pretrained model: ['classifier.weight', 'classifier.bias', 'share_fit_dense.weight', 'share_fit_dense.bias']
+2022-06-01 02:28:54,538 Weights from pretrained model not used in TinyBertForSequenceClassification: ['cls.predictions.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.dense.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.LayerNorm.bias', 'cls.predictions.decoder.weight', 'cls.seq_relationship.weight', 'cls.seq_relationship.bias']
+2022-06-01 02:28:54,554 ***** Running training *****
+2022-06-01 02:28:54,554   Num examples = 2490
+2022-06-01 02:28:54,554   Batch size = 32
+2022-06-01 02:28:54,554   Num steps = 770
+2022-06-01 02:28:54,555 n: bert.embeddings.word_embeddings.weight
+2022-06-01 02:28:54,555 n: bert.embeddings.position_embeddings.weight
+2022-06-01 02:28:54,555 n: bert.embeddings.token_type_embeddings.weight
+2022-06-01 02:28:54,555 n: bert.embeddings.LayerNorm.weight
+2022-06-01 02:28:54,555 n: bert.embeddings.LayerNorm.bias
+2022-06-01 02:28:54,555 n: bert.encoder.layer.0.attention.self.query.weight
+2022-06-01 02:28:54,555 n: bert.encoder.layer.0.attention.self.query.bias
+2022-06-01 02:28:54,555 n: bert.encoder.layer.0.attention.self.key.weight
+2022-06-01 02:28:54,555 n: bert.encoder.layer.0.attention.self.key.bias
+2022-06-01 02:28:54,555 n: bert.encoder.layer.0.attention.self.value.weight
+2022-06-01 02:28:54,556 n: bert.encoder.layer.0.attention.self.value.bias
+2022-06-01 02:28:54,556 n: bert.encoder.layer.0.attention.output.dense.weight
+2022-06-01 02:28:54,556 n: bert.encoder.layer.0.attention.output.dense.bias
+2022-06-01 02:28:54,556 n: bert.encoder.layer.0.attention.output.LayerNorm.weight
+2022-06-01 02:28:54,556 n: bert.encoder.layer.0.attention.output.LayerNorm.bias
+2022-06-01 02:28:54,556 n: bert.encoder.layer.0.intermediate.dense.weight
+2022-06-01 02:28:54,556 n: bert.encoder.layer.0.intermediate.dense.bias
+2022-06-01 02:28:54,556 n: bert.encoder.layer.0.output.dense.weight
+2022-06-01 02:28:54,556 n: bert.encoder.layer.0.output.dense.bias
+2022-06-01 02:28:54,556 n: bert.encoder.layer.0.output.LayerNorm.weight
+2022-06-01 02:28:54,556 n: bert.encoder.layer.0.output.LayerNorm.bias
+2022-06-01 02:28:54,556 n: bert.encoder.layer.1.attention.self.query.weight
+2022-06-01 02:28:54,556 n: bert.encoder.layer.1.attention.self.query.bias
+2022-06-01 02:28:54,556 n: bert.encoder.layer.1.attention.self.key.weight
+2022-06-01 02:28:54,556 n: bert.encoder.layer.1.attention.self.key.bias
+2022-06-01 02:28:54,556 n: bert.encoder.layer.1.attention.self.value.weight
+2022-06-01 02:28:54,556 n: bert.encoder.layer.1.attention.self.value.bias
+2022-06-01 02:28:54,557 n: bert.encoder.layer.1.attention.output.dense.weight
+2022-06-01 02:28:54,557 n: bert.encoder.layer.1.attention.output.dense.bias
+2022-06-01 02:28:54,557 n: bert.encoder.layer.1.attention.output.LayerNorm.weight
+2022-06-01 02:28:54,557 n: bert.encoder.layer.1.attention.output.LayerNorm.bias
+2022-06-01 02:28:54,557 n: bert.encoder.layer.1.intermediate.dense.weight
+2022-06-01 02:28:54,557 n: bert.encoder.layer.1.intermediate.dense.bias
+2022-06-01 02:28:54,557 n: bert.encoder.layer.1.output.dense.weight
+2022-06-01 02:28:54,557 n: bert.encoder.layer.1.output.dense.bias
+2022-06-01 02:28:54,557 n: bert.encoder.layer.1.output.LayerNorm.weight
+2022-06-01 02:28:54,557 n: bert.encoder.layer.1.output.LayerNorm.bias
+2022-06-01 02:28:54,557 n: bert.encoder.layer.2.attention.self.query.weight
+2022-06-01 02:28:54,557 n: bert.encoder.layer.2.attention.self.query.bias
+2022-06-01 02:28:54,557 n: bert.encoder.layer.2.attention.self.key.weight
+2022-06-01 02:28:54,557 n: bert.encoder.layer.2.attention.self.key.bias
+2022-06-01 02:28:54,557 n: bert.encoder.layer.2.attention.self.value.weight
+2022-06-01 02:28:54,557 n: bert.encoder.layer.2.attention.self.value.bias
+2022-06-01 02:28:54,557 n: bert.encoder.layer.2.attention.output.dense.weight
+2022-06-01 02:28:54,558 n: bert.encoder.layer.2.attention.output.dense.bias
+2022-06-01 02:28:54,558 n: bert.encoder.layer.2.attention.output.LayerNorm.weight
+2022-06-01 02:28:54,558 n: bert.encoder.layer.2.attention.output.LayerNorm.bias
+2022-06-01 02:28:54,558 n: bert.encoder.layer.2.intermediate.dense.weight
+2022-06-01 02:28:54,558 n: bert.encoder.layer.2.intermediate.dense.bias
+2022-06-01 02:28:54,558 n: bert.encoder.layer.2.output.dense.weight
+2022-06-01 02:28:54,558 n: bert.encoder.layer.2.output.dense.bias
+2022-06-01 02:28:54,558 n: bert.encoder.layer.2.output.LayerNorm.weight
+2022-06-01 02:28:54,558 n: bert.encoder.layer.2.output.LayerNorm.bias
+2022-06-01 02:28:54,558 n: bert.encoder.layer.3.attention.self.query.weight
+2022-06-01 02:28:54,558 n: bert.encoder.layer.3.attention.self.query.bias
+2022-06-01 02:28:54,558 n: bert.encoder.layer.3.attention.self.key.weight
+2022-06-01 02:28:54,558 n: bert.encoder.layer.3.attention.self.key.bias
+2022-06-01 02:28:54,558 n: bert.encoder.layer.3.attention.self.value.weight
+2022-06-01 02:28:54,558 n: bert.encoder.layer.3.attention.self.value.bias
+2022-06-01 02:28:54,558 n: bert.encoder.layer.3.attention.output.dense.weight
+2022-06-01 02:28:54,558 n: bert.encoder.layer.3.attention.output.dense.bias
+2022-06-01 02:28:54,559 n: bert.encoder.layer.3.attention.output.LayerNorm.weight
+2022-06-01 02:28:54,559 n: bert.encoder.layer.3.attention.output.LayerNorm.bias
+2022-06-01 02:28:54,559 n: bert.encoder.layer.3.intermediate.dense.weight
+2022-06-01 02:28:54,559 n: bert.encoder.layer.3.intermediate.dense.bias
+2022-06-01 02:28:54,559 n: bert.encoder.layer.3.output.dense.weight
+2022-06-01 02:28:54,559 n: bert.encoder.layer.3.output.dense.bias
+2022-06-01 02:28:54,559 n: bert.encoder.layer.3.output.LayerNorm.weight
+2022-06-01 02:28:54,559 n: bert.encoder.layer.3.output.LayerNorm.bias
+2022-06-01 02:28:54,559 n: bert.pooler.dense.weight
+2022-06-01 02:28:54,559 n: bert.pooler.dense.bias
+2022-06-01 02:28:54,559 n: classifier.weight
+2022-06-01 02:28:54,559 n: classifier.bias
+2022-06-01 02:28:54,559 n: share_fit_dense.weight
+2022-06-01 02:28:54,559 n: share_fit_dense.bias
+2022-06-01 02:28:54,559 n: fit_denses.0.weight
+2022-06-01 02:28:54,559 n: fit_denses.0.bias
+2022-06-01 02:28:54,559 n: fit_denses.1.weight
+2022-06-01 02:28:54,559 n: fit_denses.1.bias
+2022-06-01 02:28:54,560 n: fit_denses.2.weight
+2022-06-01 02:28:54,560 n: fit_denses.2.bias
+2022-06-01 02:28:54,560 n: fit_denses.3.weight
+2022-06-01 02:28:54,560 n: fit_denses.3.bias
+2022-06-01 02:28:54,560 n: fit_denses.4.weight
+2022-06-01 02:28:54,560 n: fit_denses.4.bias
+2022-06-01 02:28:54,560 Total parameters: 15793178
+2022-06-01 02:29:35,020 The args: Namespace(T=1.0, T_emd=1, add_softmax=True, alpha=1, aug_train=False, beta=0.01, cache_dir='', data_dir='../data/glue_data/RTE/', data_url='', do_eval=False, do_lower_case=True, do_predict=False, emb_linear=False, embedding_emd=True, eval_batch_size=64, eval_step=50, gradient_accumulation_steps=1, is_conv=False, is_teacher=True, learning_rate=3e-05, max_seq_len=128, max_seq_length=64, new_pred_loss=True, no_cuda=False, no_pretrain=False, num_train_epochs=10.0, one_step=True, output_dir='../model/RTE/student/Model__6', pkd=False, pred_distill=False, reduce_T=1.0, seed=24008, seperate=False, share_param=True, student_model='../model/student/layer4/', task_name='RTE', tb_onestep='', teacher_model='../model/RTE/teacher/', theta=1.0, tinybert=False, train_batch_size=32, update_weight=True, use_att=True, use_embedding=True, use_emd=True, use_init_weight=False, use_rep=True, warmup_proportion=0.1, weight_decay=0.0001)
+2022-06-01 02:29:38,973 device: cuda n_gpu: 1
+2022-06-01 02:29:38,975 
+pred_distill:False
+use_emd:True
+seperate:False
+train_epoch:10.0
+
+2022-06-01 02:29:39,025 Writing example 0 of 2490
+2022-06-01 02:29:39,025 *** Example ***
+2022-06-01 02:29:39,025 guid: train-0
+2022-06-01 02:29:39,025 tokens: [CLS] no weapons of mass destruction found in iraq yet . [SEP] weapons of mass destruction found in iraq . [SEP]
+2022-06-01 02:29:39,025 input_ids: 101 2053 4255 1997 3742 6215 2179 1999 5712 2664 1012 102 4255 1997 3742 6215 2179 1999 5712 1012 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-06-01 02:29:39,025 input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-06-01 02:29:39,025 segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-06-01 02:29:39,026 label: not_entailment
+2022-06-01 02:29:39,026 label_id: 1
+2022-06-01 02:29:41,281 Writing example 0 of 277
+2022-06-01 02:29:41,281 *** Example ***
+2022-06-01 02:29:41,281 guid: dev-0
+2022-06-01 02:29:41,282 tokens: [CLS] dana reeve , the widow of the actor christopher reeve , has died of lung cancer at age 44 , according to the christopher reeve foundation . [SEP] christopher reeve had an accident . [SEP]
+2022-06-01 02:29:41,282 input_ids: 101 11271 20726 1010 1996 7794 1997 1996 3364 5696 20726 1010 2038 2351 1997 11192 4456 2012 2287 4008 1010 2429 2000 1996 5696 20726 3192 1012 102 5696 20726 2018 2019 4926 1012 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-06-01 02:29:41,282 input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-06-01 02:29:41,282 segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-06-01 02:29:41,282 label: not_entailment
+2022-06-01 02:29:41,282 label_id: 1
+2022-06-01 02:29:41,666 Model config {
+  "_num_labels": 2,
+  "architectures": [
+    "BertForSequenceClassification"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": null,
+  "do_sample": false,
+  "early_stopping": false,
+  "eos_token_ids": null,
+  "finetuning_task": "rte",
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1"
+  },
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "is_decoder": false,
+  "is_encoder_decoder": false,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1
+  },
+  "layer_norm_eps": 1e-12,
+  "length_penalty": 1.0,
+  "max_length": 20,
+  "max_position_embeddings": 512,
+  "min_length": 0,
+  "model_type": "bert",
+  "no_repeat_ngram_size": 0,
+  "num_attention_heads": 12,
+  "num_beams": 1,
+  "num_hidden_layers": 12,
+  "num_return_sequences": 1,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": null,
+  "pre_trained": "",
+  "pruned_heads": {},
+  "repetition_penalty": 1.0,
+  "temperature": 1.0,
+  "top_k": 50,
+  "top_p": 1.0,
+  "torchscript": false,
+  "training": "",
+  "type_vocab_size": 2,
+  "use_bfloat16": false,
+  "vocab_size": 30522
+}
+
+2022-06-01 02:29:44,504 Loading model ../model/RTE/teacher/pytorch_model.bin
+2022-06-01 02:29:44,753 loading model...
+2022-06-01 02:29:44,877 done!
+2022-06-01 02:29:44,877 Weights of TinyBertForSequenceClassification not initialized from pretrained model: ['share_fit_dense.weight', 'share_fit_dense.bias', 'fit_denses.0.weight', 'fit_denses.0.bias', 'fit_denses.1.weight', 'fit_denses.1.bias', 'fit_denses.2.weight', 'fit_denses.2.bias', 'fit_denses.3.weight', 'fit_denses.3.bias', 'fit_denses.4.weight', 'fit_denses.4.bias', 'fit_denses.5.weight', 'fit_denses.5.bias', 'fit_denses.6.weight', 'fit_denses.6.bias', 'fit_denses.7.weight', 'fit_denses.7.bias', 'fit_denses.8.weight', 'fit_denses.8.bias', 'fit_denses.9.weight', 'fit_denses.9.bias', 'fit_denses.10.weight', 'fit_denses.10.bias', 'fit_denses.11.weight', 'fit_denses.11.bias', 'fit_denses.12.weight', 'fit_denses.12.bias']
+2022-06-01 02:29:47,605 Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "cell": {},
+  "emb_size": 312,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 312,
+  "initializer_range": 0.02,
+  "intermediate_size": 1200,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 4,
+  "output_attentions": true,
+  "output_hidden_states": true,
+  "pre_trained": "",
+  "structure": [],
+  "student": true,
+  "teacher_num_hidden_layers": 12,
+  "training": "",
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}
+
+2022-06-01 02:29:47,972 Loading model ../model/student/layer4/pytorch_model.bin
+2022-06-01 02:29:48,007 loading model...
+2022-06-01 02:29:48,019 done!
+2022-06-01 02:29:48,019 Weights of TinyBertForSequenceClassification not initialized from pretrained model: ['classifier.weight', 'classifier.bias', 'share_fit_dense.weight', 'share_fit_dense.bias']
+2022-06-01 02:29:48,019 Weights from pretrained model not used in TinyBertForSequenceClassification: ['cls.predictions.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.dense.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.LayerNorm.bias', 'cls.predictions.decoder.weight', 'cls.seq_relationship.weight', 'cls.seq_relationship.bias']
+2022-06-01 02:29:48,037 ***** Running training *****
+2022-06-01 02:29:48,037   Num examples = 2490
+2022-06-01 02:29:48,038   Batch size = 32
+2022-06-01 02:29:48,038   Num steps = 770
+2022-06-01 02:29:48,039 n: bert.embeddings.word_embeddings.weight
+2022-06-01 02:29:48,039 n: bert.embeddings.position_embeddings.weight
+2022-06-01 02:29:48,039 n: bert.embeddings.token_type_embeddings.weight
+2022-06-01 02:29:48,039 n: bert.embeddings.LayerNorm.weight
+2022-06-01 02:29:48,039 n: bert.embeddings.LayerNorm.bias
+2022-06-01 02:29:48,039 n: bert.encoder.layer.0.attention.self.query.weight
+2022-06-01 02:29:48,039 n: bert.encoder.layer.0.attention.self.query.bias
+2022-06-01 02:29:48,039 n: bert.encoder.layer.0.attention.self.key.weight
+2022-06-01 02:29:48,039 n: bert.encoder.layer.0.attention.self.key.bias
+2022-06-01 02:29:48,039 n: bert.encoder.layer.0.attention.self.value.weight
+2022-06-01 02:29:48,039 n: bert.encoder.layer.0.attention.self.value.bias
+2022-06-01 02:29:48,039 n: bert.encoder.layer.0.attention.output.dense.weight
+2022-06-01 02:29:48,039 n: bert.encoder.layer.0.attention.output.dense.bias
+2022-06-01 02:29:48,040 n: bert.encoder.layer.0.attention.output.LayerNorm.weight
+2022-06-01 02:29:48,040 n: bert.encoder.layer.0.attention.output.LayerNorm.bias
+2022-06-01 02:29:48,040 n: bert.encoder.layer.0.intermediate.dense.weight
+2022-06-01 02:29:48,040 n: bert.encoder.layer.0.intermediate.dense.bias
+2022-06-01 02:29:48,040 n: bert.encoder.layer.0.output.dense.weight
+2022-06-01 02:29:48,040 n: bert.encoder.layer.0.output.dense.bias
+2022-06-01 02:29:48,040 n: bert.encoder.layer.0.output.LayerNorm.weight
+2022-06-01 02:29:48,040 n: bert.encoder.layer.0.output.LayerNorm.bias
+2022-06-01 02:29:48,040 n: bert.encoder.layer.1.attention.self.query.weight
+2022-06-01 02:29:48,040 n: bert.encoder.layer.1.attention.self.query.bias
+2022-06-01 02:29:48,040 n: bert.encoder.layer.1.attention.self.key.weight
+2022-06-01 02:29:48,040 n: bert.encoder.layer.1.attention.self.key.bias
+2022-06-01 02:29:48,040 n: bert.encoder.layer.1.attention.self.value.weight
+2022-06-01 02:29:48,040 n: bert.encoder.layer.1.attention.self.value.bias
+2022-06-01 02:29:48,040 n: bert.encoder.layer.1.attention.output.dense.weight
+2022-06-01 02:29:48,040 n: bert.encoder.layer.1.attention.output.dense.bias
+2022-06-01 02:29:48,040 n: bert.encoder.layer.1.attention.output.LayerNorm.weight
+2022-06-01 02:29:48,041 n: bert.encoder.layer.1.attention.output.LayerNorm.bias
+2022-06-01 02:29:48,041 n: bert.encoder.layer.1.intermediate.dense.weight
+2022-06-01 02:29:48,041 n: bert.encoder.layer.1.intermediate.dense.bias
+2022-06-01 02:29:48,041 n: bert.encoder.layer.1.output.dense.weight
+2022-06-01 02:29:48,041 n: bert.encoder.layer.1.output.dense.bias
+2022-06-01 02:29:48,041 n: bert.encoder.layer.1.output.LayerNorm.weight
+2022-06-01 02:29:48,041 n: bert.encoder.layer.1.output.LayerNorm.bias
+2022-06-01 02:29:48,041 n: bert.encoder.layer.2.attention.self.query.weight
+2022-06-01 02:29:48,041 n: bert.encoder.layer.2.attention.self.query.bias
+2022-06-01 02:29:48,041 n: bert.encoder.layer.2.attention.self.key.weight
+2022-06-01 02:29:48,041 n: bert.encoder.layer.2.attention.self.key.bias
+2022-06-01 02:29:48,041 n: bert.encoder.layer.2.attention.self.value.weight
+2022-06-01 02:29:48,041 n: bert.encoder.layer.2.attention.self.value.bias
+2022-06-01 02:29:48,041 n: bert.encoder.layer.2.attention.output.dense.weight
+2022-06-01 02:29:48,041 n: bert.encoder.layer.2.attention.output.dense.bias
+2022-06-01 02:29:48,041 n: bert.encoder.layer.2.attention.output.LayerNorm.weight
+2022-06-01 02:29:48,042 n: bert.encoder.layer.2.attention.output.LayerNorm.bias
+2022-06-01 02:29:48,042 n: bert.encoder.layer.2.intermediate.dense.weight
+2022-06-01 02:29:48,042 n: bert.encoder.layer.2.intermediate.dense.bias
+2022-06-01 02:29:48,042 n: bert.encoder.layer.2.output.dense.weight
+2022-06-01 02:29:48,042 n: bert.encoder.layer.2.output.dense.bias
+2022-06-01 02:29:48,042 n: bert.encoder.layer.2.output.LayerNorm.weight
+2022-06-01 02:29:48,042 n: bert.encoder.layer.2.output.LayerNorm.bias
+2022-06-01 02:29:48,042 n: bert.encoder.layer.3.attention.self.query.weight
+2022-06-01 02:29:48,042 n: bert.encoder.layer.3.attention.self.query.bias
+2022-06-01 02:29:48,042 n: bert.encoder.layer.3.attention.self.key.weight
+2022-06-01 02:29:48,042 n: bert.encoder.layer.3.attention.self.key.bias
+2022-06-01 02:29:48,042 n: bert.encoder.layer.3.attention.self.value.weight
+2022-06-01 02:29:48,042 n: bert.encoder.layer.3.attention.self.value.bias
+2022-06-01 02:29:48,042 n: bert.encoder.layer.3.attention.output.dense.weight
+2022-06-01 02:29:48,042 n: bert.encoder.layer.3.attention.output.dense.bias
+2022-06-01 02:29:48,042 n: bert.encoder.layer.3.attention.output.LayerNorm.weight
+2022-06-01 02:29:48,042 n: bert.encoder.layer.3.attention.output.LayerNorm.bias
+2022-06-01 02:29:48,043 n: bert.encoder.layer.3.intermediate.dense.weight
+2022-06-01 02:29:48,043 n: bert.encoder.layer.3.intermediate.dense.bias
+2022-06-01 02:29:48,043 n: bert.encoder.layer.3.output.dense.weight
+2022-06-01 02:29:48,043 n: bert.encoder.layer.3.output.dense.bias
+2022-06-01 02:29:48,043 n: bert.encoder.layer.3.output.LayerNorm.weight
+2022-06-01 02:29:48,043 n: bert.encoder.layer.3.output.LayerNorm.bias
+2022-06-01 02:29:48,043 n: bert.pooler.dense.weight
+2022-06-01 02:29:48,043 n: bert.pooler.dense.bias
+2022-06-01 02:29:48,043 n: classifier.weight
+2022-06-01 02:29:48,043 n: classifier.bias
+2022-06-01 02:29:48,043 n: share_fit_dense.weight
+2022-06-01 02:29:48,043 n: share_fit_dense.bias
+2022-06-01 02:29:48,043 n: fit_denses.0.weight
+2022-06-01 02:29:48,043 n: fit_denses.0.bias
+2022-06-01 02:29:48,043 n: fit_denses.1.weight
+2022-06-01 02:29:48,043 n: fit_denses.1.bias
+2022-06-01 02:29:48,043 n: fit_denses.2.weight
+2022-06-01 02:29:48,044 n: fit_denses.2.bias
+2022-06-01 02:29:48,044 n: fit_denses.3.weight
+2022-06-01 02:29:48,044 n: fit_denses.3.bias
+2022-06-01 02:29:48,044 n: fit_denses.4.weight
+2022-06-01 02:29:48,044 n: fit_denses.4.bias
+2022-06-01 02:29:48,044 Total parameters: 15793178
+2022-06-01 02:33:34,758 The args: Namespace(T=1.0, T_emd=1, add_softmax=True, alpha=1, aug_train=False, beta=0.01, cache_dir='', data_dir='../data/glue_data/RTE/', data_url='', do_eval=False, do_lower_case=True, do_predict=False, emb_linear=False, embedding_emd=False, eval_batch_size=64, eval_step=50, gradient_accumulation_steps=1, is_conv=False, is_teacher=True, learning_rate=3e-05, max_seq_len=128, max_seq_length=64, new_pred_loss=True, no_cuda=False, no_pretrain=False, num_train_epochs=10.0, one_step=True, output_dir='../model/RTE/student/Model__7', pkd=False, pred_distill=False, reduce_T=1.0, seed=89728, seperate=False, share_param=True, student_model='../model/student/layer4/', task_name='RTE', tb_onestep='', teacher_model='../model/RTE/teacher/', theta=1.0, tinybert=False, train_batch_size=32, update_weight=True, use_att=True, use_embedding=True, use_emd=True, use_init_weight=False, use_rep=True, warmup_proportion=0.1, weight_decay=0.0001)
+2022-06-01 02:33:38,628 device: cuda n_gpu: 1
+2022-06-01 02:33:38,630 
+pred_distill:False
+use_emd:True
+seperate:False
+train_epoch:10.0
+
+2022-06-01 02:33:38,676 Writing example 0 of 2490
+2022-06-01 02:33:38,676 *** Example ***
+2022-06-01 02:33:38,676 guid: train-0
+2022-06-01 02:33:38,676 tokens: [CLS] no weapons of mass destruction found in iraq yet . [SEP] weapons of mass destruction found in iraq . [SEP]
+2022-06-01 02:33:38,676 input_ids: 101 2053 4255 1997 3742 6215 2179 1999 5712 2664 1012 102 4255 1997 3742 6215 2179 1999 5712 1012 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-06-01 02:33:38,676 input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-06-01 02:33:38,676 segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-06-01 02:33:38,677 label: not_entailment
+2022-06-01 02:33:38,677 label_id: 1
+2022-06-01 02:33:40,918 Writing example 0 of 277
+2022-06-01 02:33:40,918 *** Example ***
+2022-06-01 02:33:40,918 guid: dev-0
+2022-06-01 02:33:40,919 tokens: [CLS] dana reeve , the widow of the actor christopher reeve , has died of lung cancer at age 44 , according to the christopher reeve foundation . [SEP] christopher reeve had an accident . [SEP]
+2022-06-01 02:33:40,919 input_ids: 101 11271 20726 1010 1996 7794 1997 1996 3364 5696 20726 1010 2038 2351 1997 11192 4456 2012 2287 4008 1010 2429 2000 1996 5696 20726 3192 1012 102 5696 20726 2018 2019 4926 1012 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-06-01 02:33:40,919 input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-06-01 02:33:40,919 segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-06-01 02:33:40,919 label: not_entailment
+2022-06-01 02:33:40,919 label_id: 1
+2022-06-01 02:33:41,317 Model config {
+  "_num_labels": 2,
+  "architectures": [
+    "BertForSequenceClassification"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": null,
+  "do_sample": false,
+  "early_stopping": false,
+  "eos_token_ids": null,
+  "finetuning_task": "rte",
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1"
+  },
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "is_decoder": false,
+  "is_encoder_decoder": false,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1
+  },
+  "layer_norm_eps": 1e-12,
+  "length_penalty": 1.0,
+  "max_length": 20,
+  "max_position_embeddings": 512,
+  "min_length": 0,
+  "model_type": "bert",
+  "no_repeat_ngram_size": 0,
+  "num_attention_heads": 12,
+  "num_beams": 1,
+  "num_hidden_layers": 12,
+  "num_return_sequences": 1,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": null,
+  "pre_trained": "",
+  "pruned_heads": {},
+  "repetition_penalty": 1.0,
+  "temperature": 1.0,
+  "top_k": 50,
+  "top_p": 1.0,
+  "torchscript": false,
+  "training": "",
+  "type_vocab_size": 2,
+  "use_bfloat16": false,
+  "vocab_size": 30522
+}
+
+2022-06-01 02:33:44,132 Loading model ../model/RTE/teacher/pytorch_model.bin
+2022-06-01 02:33:44,375 loading model...
+2022-06-01 02:33:44,456 done!
+2022-06-01 02:33:44,457 Weights of TinyBertForSequenceClassification not initialized from pretrained model: ['share_fit_dense.weight', 'share_fit_dense.bias', 'fit_denses.0.weight', 'fit_denses.0.bias', 'fit_denses.1.weight', 'fit_denses.1.bias', 'fit_denses.2.weight', 'fit_denses.2.bias', 'fit_denses.3.weight', 'fit_denses.3.bias', 'fit_denses.4.weight', 'fit_denses.4.bias', 'fit_denses.5.weight', 'fit_denses.5.bias', 'fit_denses.6.weight', 'fit_denses.6.bias', 'fit_denses.7.weight', 'fit_denses.7.bias', 'fit_denses.8.weight', 'fit_denses.8.bias', 'fit_denses.9.weight', 'fit_denses.9.bias', 'fit_denses.10.weight', 'fit_denses.10.bias', 'fit_denses.11.weight', 'fit_denses.11.bias', 'fit_denses.12.weight', 'fit_denses.12.bias']
+2022-06-01 02:33:47,180 Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "cell": {},
+  "emb_size": 312,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 312,
+  "initializer_range": 0.02,
+  "intermediate_size": 1200,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 4,
+  "output_attentions": true,
+  "output_hidden_states": true,
+  "pre_trained": "",
+  "structure": [],
+  "student": true,
+  "teacher_num_hidden_layers": 12,
+  "training": "",
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}
+
+2022-06-01 02:33:47,568 Loading model ../model/student/layer4/pytorch_model.bin
+2022-06-01 02:33:47,601 loading model...
+2022-06-01 02:33:47,613 done!
+2022-06-01 02:33:47,614 Weights of TinyBertForSequenceClassification not initialized from pretrained model: ['classifier.weight', 'classifier.bias', 'share_fit_dense.weight', 'share_fit_dense.bias']
+2022-06-01 02:33:47,614 Weights from pretrained model not used in TinyBertForSequenceClassification: ['cls.predictions.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.dense.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.LayerNorm.bias', 'cls.predictions.decoder.weight', 'cls.seq_relationship.weight', 'cls.seq_relationship.bias']
+2022-06-01 02:33:47,632 ***** Running training *****
+2022-06-01 02:33:47,632   Num examples = 2490
+2022-06-01 02:33:47,633   Batch size = 32
+2022-06-01 02:33:47,633   Num steps = 770
+2022-06-01 02:33:47,633 n: bert.embeddings.word_embeddings.weight
+2022-06-01 02:33:47,634 n: bert.embeddings.position_embeddings.weight
+2022-06-01 02:33:47,634 n: bert.embeddings.token_type_embeddings.weight
+2022-06-01 02:33:47,634 n: bert.embeddings.LayerNorm.weight
+2022-06-01 02:33:47,634 n: bert.embeddings.LayerNorm.bias
+2022-06-01 02:33:47,634 n: bert.encoder.layer.0.attention.self.query.weight
+2022-06-01 02:33:47,634 n: bert.encoder.layer.0.attention.self.query.bias
+2022-06-01 02:33:47,634 n: bert.encoder.layer.0.attention.self.key.weight
+2022-06-01 02:33:47,634 n: bert.encoder.layer.0.attention.self.key.bias
+2022-06-01 02:33:47,634 n: bert.encoder.layer.0.attention.self.value.weight
+2022-06-01 02:33:47,634 n: bert.encoder.layer.0.attention.self.value.bias
+2022-06-01 02:33:47,634 n: bert.encoder.layer.0.attention.output.dense.weight
+2022-06-01 02:33:47,634 n: bert.encoder.layer.0.attention.output.dense.bias
+2022-06-01 02:33:47,634 n: bert.encoder.layer.0.attention.output.LayerNorm.weight
+2022-06-01 02:33:47,634 n: bert.encoder.layer.0.attention.output.LayerNorm.bias
+2022-06-01 02:33:47,635 n: bert.encoder.layer.0.intermediate.dense.weight
+2022-06-01 02:33:47,635 n: bert.encoder.layer.0.intermediate.dense.bias
+2022-06-01 02:33:47,635 n: bert.encoder.layer.0.output.dense.weight
+2022-06-01 02:33:47,635 n: bert.encoder.layer.0.output.dense.bias
+2022-06-01 02:33:47,635 n: bert.encoder.layer.0.output.LayerNorm.weight
+2022-06-01 02:33:47,635 n: bert.encoder.layer.0.output.LayerNorm.bias
+2022-06-01 02:33:47,635 n: bert.encoder.layer.1.attention.self.query.weight
+2022-06-01 02:33:47,635 n: bert.encoder.layer.1.attention.self.query.bias
+2022-06-01 02:33:47,635 n: bert.encoder.layer.1.attention.self.key.weight
+2022-06-01 02:33:47,635 n: bert.encoder.layer.1.attention.self.key.bias
+2022-06-01 02:33:47,635 n: bert.encoder.layer.1.attention.self.value.weight
+2022-06-01 02:33:47,635 n: bert.encoder.layer.1.attention.self.value.bias
+2022-06-01 02:33:47,635 n: bert.encoder.layer.1.attention.output.dense.weight
+2022-06-01 02:33:47,635 n: bert.encoder.layer.1.attention.output.dense.bias
+2022-06-01 02:33:47,635 n: bert.encoder.layer.1.attention.output.LayerNorm.weight
+2022-06-01 02:33:47,635 n: bert.encoder.layer.1.attention.output.LayerNorm.bias
+2022-06-01 02:33:47,636 n: bert.encoder.layer.1.intermediate.dense.weight
+2022-06-01 02:33:47,636 n: bert.encoder.layer.1.intermediate.dense.bias
+2022-06-01 02:33:47,636 n: bert.encoder.layer.1.output.dense.weight
+2022-06-01 02:33:47,636 n: bert.encoder.layer.1.output.dense.bias
+2022-06-01 02:33:47,636 n: bert.encoder.layer.1.output.LayerNorm.weight
+2022-06-01 02:33:47,636 n: bert.encoder.layer.1.output.LayerNorm.bias
+2022-06-01 02:33:47,636 n: bert.encoder.layer.2.attention.self.query.weight
+2022-06-01 02:33:47,636 n: bert.encoder.layer.2.attention.self.query.bias
+2022-06-01 02:33:47,636 n: bert.encoder.layer.2.attention.self.key.weight
+2022-06-01 02:33:47,636 n: bert.encoder.layer.2.attention.self.key.bias
+2022-06-01 02:33:47,636 n: bert.encoder.layer.2.attention.self.value.weight
+2022-06-01 02:33:47,636 n: bert.encoder.layer.2.attention.self.value.bias
+2022-06-01 02:33:47,636 n: bert.encoder.layer.2.attention.output.dense.weight
+2022-06-01 02:33:47,636 n: bert.encoder.layer.2.attention.output.dense.bias
+2022-06-01 02:33:47,637 n: bert.encoder.layer.2.attention.output.LayerNorm.weight
+2022-06-01 02:33:47,637 n: bert.encoder.layer.2.attention.output.LayerNorm.bias
+2022-06-01 02:33:47,637 n: bert.encoder.layer.2.intermediate.dense.weight
+2022-06-01 02:33:47,637 n: bert.encoder.layer.2.intermediate.dense.bias
+2022-06-01 02:33:47,637 n: bert.encoder.layer.2.output.dense.weight
+2022-06-01 02:33:47,637 n: bert.encoder.layer.2.output.dense.bias
+2022-06-01 02:33:47,637 n: bert.encoder.layer.2.output.LayerNorm.weight
+2022-06-01 02:33:47,637 n: bert.encoder.layer.2.output.LayerNorm.bias
+2022-06-01 02:33:47,637 n: bert.encoder.layer.3.attention.self.query.weight
+2022-06-01 02:33:47,637 n: bert.encoder.layer.3.attention.self.query.bias
+2022-06-01 02:33:47,637 n: bert.encoder.layer.3.attention.self.key.weight
+2022-06-01 02:33:47,637 n: bert.encoder.layer.3.attention.self.key.bias
+2022-06-01 02:33:47,637 n: bert.encoder.layer.3.attention.self.value.weight
+2022-06-01 02:33:47,637 n: bert.encoder.layer.3.attention.self.value.bias
+2022-06-01 02:33:47,638 n: bert.encoder.layer.3.attention.output.dense.weight
+2022-06-01 02:33:47,638 n: bert.encoder.layer.3.attention.output.dense.bias
+2022-06-01 02:33:47,638 n: bert.encoder.layer.3.attention.output.LayerNorm.weight
+2022-06-01 02:33:47,638 n: bert.encoder.layer.3.attention.output.LayerNorm.bias
+2022-06-01 02:33:47,638 n: bert.encoder.layer.3.intermediate.dense.weight
+2022-06-01 02:33:47,638 n: bert.encoder.layer.3.intermediate.dense.bias
+2022-06-01 02:33:47,638 n: bert.encoder.layer.3.output.dense.weight
+2022-06-01 02:33:47,638 n: bert.encoder.layer.3.output.dense.bias
+2022-06-01 02:33:47,638 n: bert.encoder.layer.3.output.LayerNorm.weight
+2022-06-01 02:33:47,638 n: bert.encoder.layer.3.output.LayerNorm.bias
+2022-06-01 02:33:47,638 n: bert.pooler.dense.weight
+2022-06-01 02:33:47,638 n: bert.pooler.dense.bias
+2022-06-01 02:33:47,638 n: classifier.weight
+2022-06-01 02:33:47,638 n: classifier.bias
+2022-06-01 02:33:47,639 n: share_fit_dense.weight
+2022-06-01 02:33:47,639 n: share_fit_dense.bias
+2022-06-01 02:33:47,639 n: fit_denses.0.weight
+2022-06-01 02:33:47,639 n: fit_denses.0.bias
+2022-06-01 02:33:47,639 n: fit_denses.1.weight
+2022-06-01 02:33:47,639 n: fit_denses.1.bias
+2022-06-01 02:33:47,639 n: fit_denses.2.weight
+2022-06-01 02:33:47,639 n: fit_denses.2.bias
+2022-06-01 02:33:47,639 n: fit_denses.3.weight
+2022-06-01 02:33:47,639 n: fit_denses.3.bias
+2022-06-01 02:33:47,639 n: fit_denses.4.weight
+2022-06-01 02:33:47,639 n: fit_denses.4.bias
+2022-06-01 02:33:47,639 Total parameters: 15793178
+2022-06-01 02:33:47,762 all_student_weight:[0.20427334 0.26512667 0.254536   0.27606399]
+2022-06-01 02:33:47,762 all_teacher_weight:[0.06186751 0.05477071 0.10602626 0.06879196 0.06881673 0.137471
+ 0.06429651 0.0608005  0.11222314 0.06551054 0.06284046 0.13658468]
+2022-06-01 02:33:56,183 ***** Running evaluation *****
+2022-06-01 02:33:56,184   Epoch = 0 iter 49 step
+2022-06-01 02:33:56,184   Num examples = 277
+2022-06-01 02:33:56,184   Batch size = 64
+2022-06-01 02:33:56,398 ***** Eval results *****
+2022-06-01 02:33:56,398   acc = 0.592057761732852
+2022-06-01 02:33:56,398   att_loss = 3.4201989757771396
+2022-06-01 02:33:56,398   cls_loss = 0.3281451074444518
+2022-06-01 02:33:56,398   eval_loss = 0.6505879878997802
+2022-06-01 02:33:56,398   global_step = 49
+2022-06-01 02:33:56,399   loss = 0.3714733251503536
+2022-06-01 02:33:56,399   rep_loss = 0.5480245327462956
+2022-06-01 02:33:56,399 ***** Save model *****
+2022-06-01 02:33:56,551 ***** Eval results *****
+2022-06-01 02:33:56,551   acc = 0.592057761732852
+2022-06-01 02:33:56,551   att_loss = 3.4201989757771396
+2022-06-01 02:33:56,551   best_acc = 0.592057761732852
+2022-06-01 02:33:56,551   cls_loss = 0.3281451074444518
+2022-06-01 02:33:56,551   eval_loss = 0.6505879878997802
+2022-06-01 02:33:56,551   global_step = 49
+2022-06-01 02:33:56,551   loss = 0.3714733251503536
+2022-06-01 02:33:56,552   rep_loss = 0.5480245327462956
+2022-06-01 02:33:56,830 all_student_weight:[0.20921795 0.24662295 0.24777506 0.29638404]
+2022-06-01 02:33:56,830 all_teacher_weight:[0.06722383 0.05825304 0.09737147 0.07750352 0.06988537 0.11116552
+ 0.06614093 0.07045148 0.09775347 0.07234108 0.07182752 0.14008277]
+2022-06-01 02:34:05,478 ***** Running evaluation *****
+2022-06-01 02:34:05,478   Epoch = 1 iter 99 step
+2022-06-01 02:34:05,479   Num examples = 277
+2022-06-01 02:34:05,479   Batch size = 64
+2022-06-01 02:34:05,715 ***** Eval results *****
+2022-06-01 02:34:05,715   acc = 0.6245487364620939
+2022-06-01 02:34:05,715   att_loss = 3.039566907015714
+2022-06-01 02:34:05,715   cls_loss = 0.3145961409265345
+2022-06-01 02:34:05,715   eval_loss = 0.6485165596008301
+2022-06-01 02:34:05,715   global_step = 99
+2022-06-01 02:34:05,715   loss = 0.3531740646470677
+2022-06-01 02:34:05,715   rep_loss = 0.491056659004905
+2022-06-01 02:34:05,715 ***** Save model *****
+2022-06-01 02:34:06,139 ***** Eval results *****
+2022-06-01 02:34:06,139   acc = 0.6245487364620939
+2022-06-01 02:34:06,139   att_loss = 3.039566907015714
+2022-06-01 02:34:06,139   best_acc = 0.6245487364620939
+2022-06-01 02:34:06,139   cls_loss = 0.3145961409265345
+2022-06-01 02:34:06,139   eval_loss = 0.6485165596008301
+2022-06-01 02:34:06,139   global_step = 99
+2022-06-01 02:34:06,140   loss = 0.3531740646470677
+2022-06-01 02:34:06,140   rep_loss = 0.491056659004905
+2022-06-01 02:34:06,438 all_student_weight:[0.2109869  0.25323234 0.25071994 0.28506081]
+2022-06-01 02:34:06,438 all_teacher_weight:[0.06953315 0.06001167 0.09644848 0.08114598 0.07218473 0.11287247
+ 0.06876439 0.07242764 0.09701043 0.07038837 0.0701705  0.12904219]
+2022-06-01 02:34:15,089 ***** Running evaluation *****
+2022-06-01 02:34:15,089   Epoch = 1 iter 149 step
+2022-06-01 02:34:15,090   Num examples = 277
+2022-06-01 02:34:15,090   Batch size = 64
+2022-06-01 02:34:15,326 ***** Eval results *****
+2022-06-01 02:34:15,326   acc = 0.6064981949458483
+2022-06-01 02:34:15,326   att_loss = 3.050524224837621
+2022-06-01 02:34:15,326   cls_loss = 0.3136672257549233
+2022-06-01 02:34:15,326   eval_loss = 0.6732855319976807
+2022-06-01 02:34:15,326   global_step = 149
+2022-06-01 02:34:15,326   loss = 0.352194110966391
+2022-06-01 02:34:15,326   rep_loss = 0.48212136121259797
+2022-06-01 02:34:15,615 all_student_weight:[0.20858018 0.24738522 0.24901108 0.29502353]
+2022-06-01 02:34:15,615 all_teacher_weight:[0.06923798 0.05974488 0.0905255  0.07920163 0.07020314 0.10702349
+ 0.06900077 0.07209533 0.09914307 0.07059386 0.07316286 0.14006749]
+2022-06-01 02:34:24,261 ***** Running evaluation *****
+2022-06-01 02:34:24,261   Epoch = 2 iter 199 step
+2022-06-01 02:34:24,261   Num examples = 277
+2022-06-01 02:34:24,261   Batch size = 64
+2022-06-01 02:34:24,492 ***** Eval results *****
+2022-06-01 02:34:24,492   acc = 0.631768953068592
+2022-06-01 02:34:24,492   att_loss = 3.0491312980651855
+2022-06-01 02:34:24,492   cls_loss = 0.3039730846881866
+2022-06-01 02:34:24,492   eval_loss = 0.663033378124237
+2022-06-01 02:34:24,493   global_step = 199
+2022-06-01 02:34:24,493   loss = 0.34211652742491827
+2022-06-01 02:34:24,493   rep_loss = 0.462130112780465
+2022-06-01 02:34:24,493 ***** Save model *****
+2022-06-01 02:34:24,996 ***** Eval results *****
+2022-06-01 02:34:24,996   acc = 0.631768953068592
+2022-06-01 02:34:24,997   att_loss = 3.0491312980651855
+2022-06-01 02:34:24,997   best_acc = 0.631768953068592
+2022-06-01 02:34:24,997   cls_loss = 0.3039730846881866
+2022-06-01 02:34:24,997   eval_loss = 0.663033378124237
+2022-06-01 02:34:24,997   global_step = 199
+2022-06-01 02:34:24,997   loss = 0.34211652742491827
+2022-06-01 02:34:24,997   rep_loss = 0.462130112780465
+2022-06-01 02:34:25,293 all_student_weight:[0.2117559  0.24968791 0.24880977 0.28974643]
+2022-06-01 02:34:25,293 all_teacher_weight:[0.07063939 0.06162054 0.08824729 0.08141368 0.06876713 0.10800788
+ 0.06940342 0.07193602 0.09800302 0.07090718 0.07085038 0.14020407]
+2022-06-01 02:34:33,572 ***** Running evaluation *****
+2022-06-01 02:34:33,573   Epoch = 3 iter 249 step
+2022-06-01 02:34:33,573   Num examples = 277
+2022-06-01 02:34:33,573   Batch size = 64
+2022-06-01 02:34:33,801 ***** Eval results *****
+2022-06-01 02:34:33,801   acc = 0.6823104693140795
+2022-06-01 02:34:33,801   att_loss = 2.9875907235675387
+2022-06-01 02:34:33,801   cls_loss = 0.3023034218284819
+2022-06-01 02:34:33,801   eval_loss = 0.612385231256485
+2022-06-01 02:34:33,801   global_step = 249
+2022-06-01 02:34:33,801   loss = 0.33953117662005955
+2022-06-01 02:34:33,801   rep_loss = 0.44787101613150704
+2022-06-01 02:34:33,802 ***** Save model *****
+2022-06-01 02:34:34,298 ***** Eval results *****
+2022-06-01 02:34:34,299   acc = 0.6823104693140795
+2022-06-01 02:34:34,299   att_loss = 2.9875907235675387
+2022-06-01 02:34:34,299   best_acc = 0.6823104693140795
+2022-06-01 02:34:34,299   cls_loss = 0.3023034218284819
+2022-06-01 02:34:34,299   eval_loss = 0.612385231256485
+2022-06-01 02:34:34,299   global_step = 249
+2022-06-01 02:34:34,299   loss = 0.33953117662005955
+2022-06-01 02:34:34,299   rep_loss = 0.44787101613150704
+2022-06-01 02:34:34,576 all_student_weight:[0.21086462 0.25167554 0.25137232 0.28608753]
+2022-06-01 02:34:34,576 all_teacher_weight:[0.07066661 0.06130612 0.08674908 0.08046863 0.07075381 0.1092697
+ 0.07029088 0.0739435  0.09848051 0.07207537 0.0731253  0.13287049]
+2022-06-01 02:34:42,677 ***** Running evaluation *****
+2022-06-01 02:34:42,677   Epoch = 3 iter 299 step
+2022-06-01 02:34:42,677   Num examples = 277
+2022-06-01 02:34:42,677   Batch size = 64
+2022-06-01 02:34:42,899 ***** Eval results *****
+2022-06-01 02:34:42,899   acc = 0.6534296028880866
+2022-06-01 02:34:42,899   att_loss = 2.9942506306311665
+2022-06-01 02:34:42,899   cls_loss = 0.29989760851158814
+2022-06-01 02:34:42,899   eval_loss = 0.6240803241729737
+2022-06-01 02:34:42,899   global_step = 299
+2022-06-01 02:34:42,899   loss = 0.3371180173228769
+2022-06-01 02:34:42,899   rep_loss = 0.443810080342433
+2022-06-01 02:34:43,169 all_student_weight:[0.22145653 0.2515981  0.2448873  0.28205807]
+2022-06-01 02:34:43,169 all_teacher_weight:[0.07261742 0.06411768 0.08710659 0.0818526  0.07123339 0.10845359
+ 0.06745516 0.07014335 0.09503171 0.07230583 0.07213904 0.13754364]
+2022-06-01 02:34:51,373 ***** Running evaluation *****
+2022-06-01 02:34:51,373   Epoch = 4 iter 349 step
+2022-06-01 02:34:51,373   Num examples = 277
+2022-06-01 02:34:51,373   Batch size = 64
+2022-06-01 02:34:51,594 ***** Eval results *****
+2022-06-01 02:34:51,594   acc = 0.6642599277978339
+2022-06-01 02:34:51,594   att_loss = 2.9715624146345183
+2022-06-01 02:34:51,594   cls_loss = 0.2967232007805894
+2022-06-01 02:34:51,594   eval_loss = 0.6286305546760559
+2022-06-01 02:34:51,594   global_step = 349
+2022-06-01 02:34:51,594   loss = 0.33350104384306
+2022-06-01 02:34:51,594   rep_loss = 0.43223625276146865
+2022-06-01 02:34:51,878 all_student_weight:[0.21862933 0.25408054 0.24835194 0.27893819]
+2022-06-01 02:34:51,879 all_teacher_weight:[0.07191766 0.0635795  0.08465521 0.0831501  0.07106497 0.10816898
+ 0.06801265 0.07167498 0.09649621 0.07187478 0.07086365 0.13854133]
+2022-06-01 02:35:00,390 ***** Running evaluation *****
+2022-06-01 02:35:00,390   Epoch = 5 iter 399 step
+2022-06-01 02:35:00,391   Num examples = 277
+2022-06-01 02:35:00,391   Batch size = 64
+2022-06-01 02:35:00,611 ***** Eval results *****
+2022-06-01 02:35:00,611   acc = 0.6389891696750902
+2022-06-01 02:35:00,611   att_loss = 2.9562821899141585
+2022-06-01 02:35:00,611   cls_loss = 0.2905892389161246
+2022-06-01 02:35:00,611   eval_loss = 0.6737444877624512
+2022-06-01 02:35:00,611   global_step = 399
+2022-06-01 02:35:00,611   loss = 0.3270635264260428
+2022-06-01 02:35:00,611   rep_loss = 0.42389361560344696
+2022-06-01 02:35:00,889 all_student_weight:[0.22041999 0.25387178 0.24686913 0.2788391 ]
+2022-06-01 02:35:00,889 all_teacher_weight:[0.07299014 0.0641341  0.08540114 0.08251122 0.07120572 0.10946013
+ 0.06846834 0.07134631 0.09505397 0.0727151  0.07245033 0.13426351]
+2022-06-01 02:35:09,258 ***** Running evaluation *****
+2022-06-01 02:35:09,258   Epoch = 5 iter 449 step
+2022-06-01 02:35:09,259   Num examples = 277
+2022-06-01 02:35:09,259   Batch size = 64
+2022-06-01 02:35:09,484 ***** Eval results *****
+2022-06-01 02:35:09,484   acc = 0.6245487364620939
+2022-06-01 02:35:09,484   att_loss = 2.958456251770258
+2022-06-01 02:35:09,484   cls_loss = 0.2924703494645655
+2022-06-01 02:35:09,484   eval_loss = 0.6825293898582458
+2022-06-01 02:35:09,484   global_step = 449
+2022-06-01 02:35:09,484   loss = 0.32889262633398175
+2022-06-01 02:35:09,484   rep_loss = 0.4201907296665013
+2022-06-01 02:35:09,757 all_student_weight:[0.22318201 0.25512014 0.24938491 0.27231294]
+2022-06-01 02:35:09,757 all_teacher_weight:[0.07383992 0.06500697 0.08483708 0.08362216 0.07171738 0.10954671
+ 0.06817274 0.07114266 0.09715113 0.07238457 0.07132731 0.13125137]
+2022-06-01 02:35:18,291 ***** Running evaluation *****
+2022-06-01 02:35:18,291   Epoch = 6 iter 499 step
+2022-06-01 02:35:18,291   Num examples = 277
+2022-06-01 02:35:18,291   Batch size = 64
+2022-06-01 02:35:18,517 ***** Eval results *****
+2022-06-01 02:35:18,517   acc = 0.6570397111913358
+2022-06-01 02:35:18,517   att_loss = 2.925912715293266
+2022-06-01 02:35:18,517   cls_loss = 0.28953729690732183
+2022-06-01 02:35:18,517   eval_loss = 0.6482810735702514
+2022-06-01 02:35:18,517   global_step = 499
+2022-06-01 02:35:18,517   loss = 0.3254698265243221
+2022-06-01 02:35:18,517   rep_loss = 0.4111320529435132
+2022-06-01 02:35:18,795 all_student_weight:[0.21953904 0.25398571 0.24860384 0.27787141]
+2022-06-01 02:35:18,795 all_teacher_weight:[0.07333618 0.06443684 0.082497   0.08429899 0.07132011 0.10693626
+ 0.06850784 0.07167428 0.09599135 0.07272297 0.07237716 0.13590102]
+2022-06-01 02:35:27,399 ***** Running evaluation *****
+2022-06-01 02:35:27,400   Epoch = 7 iter 549 step
+2022-06-01 02:35:27,400   Num examples = 277
+2022-06-01 02:35:27,400   Batch size = 64
+2022-06-01 02:35:27,637 ***** Eval results *****
+2022-06-01 02:35:27,637   acc = 0.6534296028880866
+2022-06-01 02:35:27,637   att_loss = 2.9592607259750365
+2022-06-01 02:35:27,637   cls_loss = 0.28415573239326475
+2022-06-01 02:35:27,638   eval_loss = 0.6361697793006897
+2022-06-01 02:35:27,638   global_step = 549
+2022-06-01 02:35:27,638   loss = 0.32033557891845704
+2022-06-01 02:35:27,638   rep_loss = 0.4047327280044556
+2022-06-01 02:35:27,928 all_student_weight:[0.22231253 0.25392588 0.2450076  0.278754  ]
+2022-06-01 02:35:27,928 all_teacher_weight:[0.07424279 0.06543736 0.08369675 0.08532585 0.07076712 0.10615964
+ 0.06815808 0.07121683 0.09330975 0.07108878 0.07056652 0.14003054]
+2022-06-01 02:35:36,442 ***** Running evaluation *****
+2022-06-01 02:35:36,442   Epoch = 7 iter 599 step
+2022-06-01 02:35:36,442   Num examples = 277
+2022-06-01 02:35:36,442   Batch size = 64
+2022-06-01 02:35:36,678 ***** Eval results *****
+2022-06-01 02:35:36,678   acc = 0.631768953068592
+2022-06-01 02:35:36,678   att_loss = 2.9198469201723736
+2022-06-01 02:35:36,678   cls_loss = 0.28757128566503526
+2022-06-01 02:35:36,678   eval_loss = 0.6506256699562073
+2022-06-01 02:35:36,678   global_step = 599
+2022-06-01 02:35:36,678   loss = 0.32329080253839493
+2022-06-01 02:35:36,678   rep_loss = 0.40187733322381974
+2022-06-01 02:35:36,942 all_student_weight:[0.21969586 0.25566817 0.25545274 0.26918323]
+2022-06-01 02:35:36,942 all_teacher_weight:[0.07392993 0.06449605 0.08201232 0.0853723  0.07122573 0.1073354
+ 0.06913492 0.07355151 0.0982973  0.07482272 0.0745032  0.12531862]
+2022-06-01 02:35:45,041 ***** Running evaluation *****
+2022-06-01 02:35:45,042   Epoch = 8 iter 649 step
+2022-06-01 02:35:45,042   Num examples = 277
+2022-06-01 02:35:45,042   Batch size = 64
+2022-06-01 02:35:45,275 ***** Eval results *****
+2022-06-01 02:35:45,275   acc = 0.628158844765343
+2022-06-01 02:35:45,275   att_loss = 2.9445536281123306
+2022-06-01 02:35:45,275   cls_loss = 0.28873815229444794
+2022-06-01 02:35:45,275   eval_loss = 0.6890802502632141
+2022-06-01 02:35:45,275   global_step = 649
+2022-06-01 02:35:45,275   loss = 0.3246270445260135
+2022-06-01 02:35:45,275   rep_loss = 0.3969504517136198
+2022-06-01 02:35:45,539 all_student_weight:[0.22165896 0.25456799 0.24874047 0.27503258]
+2022-06-01 02:35:45,540 all_teacher_weight:[0.07433545 0.06546297 0.08216981 0.0852767  0.07221911 0.10771947
+ 0.0682538  0.07177513 0.09540118 0.07190207 0.07203902 0.13344532]
+2022-06-01 02:35:53,656 ***** Running evaluation *****
+2022-06-01 02:35:53,656   Epoch = 9 iter 699 step
+2022-06-01 02:35:53,657   Num examples = 277
+2022-06-01 02:35:53,657   Batch size = 64
+2022-06-01 02:35:53,891 ***** Eval results *****
+2022-06-01 02:35:53,891   acc = 0.6245487364620939
+2022-06-01 02:35:53,891   att_loss = 2.8531353076299033
+2022-06-01 02:35:53,891   cls_loss = 0.2822238008181254
+2022-06-01 02:35:53,891   eval_loss = 0.6775532245635987
+2022-06-01 02:35:53,891   global_step = 699
+2022-06-01 02:35:53,891   loss = 0.3170151114463806
+2022-06-01 02:35:53,892   rep_loss = 0.3876894563436508
+2022-06-01 02:35:54,157 all_student_weight:[0.22171306 0.25360426 0.24599862 0.27868406]
+2022-06-01 02:35:54,157 all_teacher_weight:[0.07431736 0.0657909  0.08173464 0.0848743  0.07113298 0.10461205
+ 0.06868643 0.07184339 0.09329412 0.07250956 0.07259352 0.13861077]
+2022-06-01 02:36:02,263 ***** Running evaluation *****
+2022-06-01 02:36:02,264   Epoch = 9 iter 749 step
+2022-06-01 02:36:02,264   Num examples = 277
+2022-06-01 02:36:02,264   Batch size = 64
+2022-06-01 02:36:02,498 ***** Eval results *****
+2022-06-01 02:36:02,498   acc = 0.6425992779783394
+2022-06-01 02:36:02,498   att_loss = 2.8776693599564687
+2022-06-01 02:36:02,498   cls_loss = 0.2869062881384577
+2022-06-01 02:36:02,498   eval_loss = 0.6457026124000549
+2022-06-01 02:36:02,498   global_step = 749
+2022-06-01 02:36:02,498   loss = 0.3219459152647427
+2022-06-01 02:36:02,499   rep_loss = 0.38686695215957506
+2022-06-01 02:36:02,761 all_student_weight:[0.2206434  0.25568371 0.25069974 0.27297314]
+2022-06-01 02:36:02,762 all_teacher_weight:[0.07395562 0.06500722 0.08120079 0.08509451 0.07112251 0.10796515
+ 0.06865405 0.07208938 0.09546465 0.07274685 0.0726257  0.13407356]
+2022-06-01 02:42:57,755 The args: Namespace(T=1.0, T_emd=1, add_softmax=True, alpha=1, aug_train=False, beta=0.01, cache_dir='', data_dir='../data/glue_data/MRPC/', data_url='', do_eval=False, do_lower_case=True, do_predict=False, emb_linear=False, eval_batch_size=64, eval_step=50, gradient_accumulation_steps=1, is_conv=False, is_teacher=True, learning_rate=3e-05, max_seq_len=128, max_seq_length=64, new_pred_loss=True, no_cuda=False, no_pretrain=False, num_train_epochs=10.0, one_step=True, output_dir='../model/MRPC/student/Model__0', pkd=False, pred_distill=False, reduce_T=1.0, seed=27738, seperate=False, share_param=True, student_model='../model/student/layer4/', task_name='MRPC', tb_onestep='', teacher_model='../model/MRPC/teacher/', theta=1.0, tinybert=False, train_batch_size=32, update_weight=True, use_att=True, use_embedding=True, use_emd=True, use_init_weight=False, use_rep=True, warmup_proportion=0.1, weight_decay=0.0001)
+2022-06-01 02:43:01,460 device: cuda n_gpu: 8
+2022-06-01 02:43:01,462 
+pred_distill:False
+use_emd:True
+seperate:False
+train_epoch:10.0
+
+2022-06-01 02:43:01,501 LOOKING AT ../data/glue_data/MRPC/train.tsv
+2022-06-01 02:43:01,523 Writing example 0 of 3668
+2022-06-01 02:43:01,524 *** Example ***
+2022-06-01 02:43:01,524 guid: train-1
+2022-06-01 02:43:01,524 tokens: [CLS] am ##ro ##zi accused his brother , whom he called " the witness " , of deliberately di ##stor ##ting his evidence . [SEP] referring to him as only " the witness " , am ##ro ##zi accused his brother of deliberately di ##stor ##ting his evidence . [SEP]
+2022-06-01 02:43:01,524 input_ids: 101 2572 3217 5831 5496 2010 2567 1010 3183 2002 2170 1000 1996 7409 1000 1010 1997 9969 4487 23809 3436 2010 3350 1012 102 7727 2000 2032 2004 2069 1000 1996 7409 1000 1010 2572 3217 5831 5496 2010 2567 1997 9969 4487 23809 3436 2010 3350 1012 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-06-01 02:43:01,524 input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-06-01 02:43:01,525 segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-06-01 02:43:01,525 label: 1
+2022-06-01 02:43:01,525 label_id: 1
+2022-06-01 02:43:04,194 Writing example 0 of 408
+2022-06-01 02:43:04,194 *** Example ***
+2022-06-01 02:43:04,194 guid: dev-1
+2022-06-01 02:43:04,195 tokens: [CLS] he said the foods ##er ##vic ##e pie business doesn ' t fit the company ' s long - term growth strategy . [SEP] " the foods ##er ##vic ##e pie business does not fit our long - term growth strategy . [SEP]
+2022-06-01 02:43:04,195 input_ids: 101 2002 2056 1996 9440 2121 7903 2063 11345 2449 2987 1005 1056 4906 1996 2194 1005 1055 2146 1011 2744 3930 5656 1012 102 1000 1996 9440 2121 7903 2063 11345 2449 2515 2025 4906 2256 2146 1011 2744 3930 5656 1012 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-06-01 02:43:04,195 input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-06-01 02:43:04,195 segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-06-01 02:43:04,195 label: 1
+2022-06-01 02:43:04,195 label_id: 1
+2022-06-01 02:43:04,512 Model config {
+  "_num_labels": 2,
+  "architectures": [
+    "BertForSequenceClassification"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": null,
+  "do_sample": false,
+  "early_stopping": false,
+  "eos_token_ids": null,
+  "finetuning_task": "mrpc",
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1"
+  },
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "is_decoder": false,
+  "is_encoder_decoder": false,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1
+  },
+  "layer_norm_eps": 1e-12,
+  "length_penalty": 1.0,
+  "max_length": 20,
+  "max_position_embeddings": 512,
+  "min_length": 0,
+  "model_type": "bert",
+  "no_repeat_ngram_size": 0,
+  "num_attention_heads": 12,
+  "num_beams": 1,
+  "num_hidden_layers": 12,
+  "num_return_sequences": 1,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": null,
+  "pre_trained": "",
+  "pruned_heads": {},
+  "repetition_penalty": 1.0,
+  "temperature": 1.0,
+  "top_k": 50,
+  "top_p": 1.0,
+  "torchscript": false,
+  "training": "",
+  "type_vocab_size": 2,
+  "use_bfloat16": false,
+  "vocab_size": 30522
+}
+
+2022-06-01 02:43:07,303 Loading model ../model/MRPC/teacher/pytorch_model.bin
+2022-06-01 02:43:07,555 loading model...
+2022-06-01 02:43:07,616 done!
+2022-06-01 02:43:07,616 Weights of TinyBertForSequenceClassification not initialized from pretrained model: ['share_fit_dense.weight', 'share_fit_dense.bias', 'fit_denses.0.weight', 'fit_denses.0.bias', 'fit_denses.1.weight', 'fit_denses.1.bias', 'fit_denses.2.weight', 'fit_denses.2.bias', 'fit_denses.3.weight', 'fit_denses.3.bias', 'fit_denses.4.weight', 'fit_denses.4.bias', 'fit_denses.5.weight', 'fit_denses.5.bias', 'fit_denses.6.weight', 'fit_denses.6.bias', 'fit_denses.7.weight', 'fit_denses.7.bias', 'fit_denses.8.weight', 'fit_denses.8.bias', 'fit_denses.9.weight', 'fit_denses.9.bias', 'fit_denses.10.weight', 'fit_denses.10.bias', 'fit_denses.11.weight', 'fit_denses.11.bias', 'fit_denses.12.weight', 'fit_denses.12.bias']
+2022-06-01 02:43:11,537 Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "cell": {},
+  "emb_size": 312,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 312,
+  "initializer_range": 0.02,
+  "intermediate_size": 1200,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 4,
+  "output_attentions": true,
+  "output_hidden_states": true,
+  "pre_trained": "",
+  "structure": [],
+  "student": true,
+  "teacher_num_hidden_layers": 12,
+  "training": "",
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}
+
+2022-06-01 02:43:11,902 Loading model ../model/student/layer4/pytorch_model.bin
+2022-06-01 02:43:11,950 loading model...
+2022-06-01 02:43:11,960 done!
+2022-06-01 02:43:11,960 Weights of TinyBertForSequenceClassification not initialized from pretrained model: ['classifier.weight', 'classifier.bias', 'share_fit_dense.weight', 'share_fit_dense.bias']
+2022-06-01 02:43:11,960 Weights from pretrained model not used in TinyBertForSequenceClassification: ['cls.predictions.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.dense.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.LayerNorm.bias', 'cls.predictions.decoder.weight', 'cls.seq_relationship.weight', 'cls.seq_relationship.bias']
+2022-06-01 02:43:11,980 ***** Running training *****
+2022-06-01 02:43:11,980   Num examples = 3668
+2022-06-01 02:43:11,981   Batch size = 32
+2022-06-01 02:43:11,981   Num steps = 1140
+2022-06-01 02:43:11,983 n: module.bert.embeddings.word_embeddings.weight
+2022-06-01 02:43:11,983 n: module.bert.embeddings.position_embeddings.weight
+2022-06-01 02:43:11,983 n: module.bert.embeddings.token_type_embeddings.weight
+2022-06-01 02:43:11,983 n: module.bert.embeddings.LayerNorm.weight
+2022-06-01 02:43:11,983 n: module.bert.embeddings.LayerNorm.bias
+2022-06-01 02:43:11,983 n: module.bert.encoder.layer.0.attention.self.query.weight
+2022-06-01 02:43:11,983 n: module.bert.encoder.layer.0.attention.self.query.bias
+2022-06-01 02:43:11,983 n: module.bert.encoder.layer.0.attention.self.key.weight
+2022-06-01 02:43:11,984 n: module.bert.encoder.layer.0.attention.self.key.bias
+2022-06-01 02:43:11,984 n: module.bert.encoder.layer.0.attention.self.value.weight
+2022-06-01 02:43:11,984 n: module.bert.encoder.layer.0.attention.self.value.bias
+2022-06-01 02:43:11,984 n: module.bert.encoder.layer.0.attention.output.dense.weight
+2022-06-01 02:43:11,984 n: module.bert.encoder.layer.0.attention.output.dense.bias
+2022-06-01 02:43:11,984 n: module.bert.encoder.layer.0.attention.output.LayerNorm.weight
+2022-06-01 02:43:11,984 n: module.bert.encoder.layer.0.attention.output.LayerNorm.bias
+2022-06-01 02:43:11,984 n: module.bert.encoder.layer.0.intermediate.dense.weight
+2022-06-01 02:43:11,984 n: module.bert.encoder.layer.0.intermediate.dense.bias
+2022-06-01 02:43:11,985 n: module.bert.encoder.layer.0.output.dense.weight
+2022-06-01 02:43:11,985 n: module.bert.encoder.layer.0.output.dense.bias
+2022-06-01 02:43:11,985 n: module.bert.encoder.layer.0.output.LayerNorm.weight
+2022-06-01 02:43:11,985 n: module.bert.encoder.layer.0.output.LayerNorm.bias
+2022-06-01 02:43:11,985 n: module.bert.encoder.layer.1.attention.self.query.weight
+2022-06-01 02:43:11,985 n: module.bert.encoder.layer.1.attention.self.query.bias
+2022-06-01 02:43:11,985 n: module.bert.encoder.layer.1.attention.self.key.weight
+2022-06-01 02:43:11,985 n: module.bert.encoder.layer.1.attention.self.key.bias
+2022-06-01 02:43:11,985 n: module.bert.encoder.layer.1.attention.self.value.weight
+2022-06-01 02:43:11,986 n: module.bert.encoder.layer.1.attention.self.value.bias
+2022-06-01 02:43:11,986 n: module.bert.encoder.layer.1.attention.output.dense.weight
+2022-06-01 02:43:11,986 n: module.bert.encoder.layer.1.attention.output.dense.bias
+2022-06-01 02:43:11,986 n: module.bert.encoder.layer.1.attention.output.LayerNorm.weight
+2022-06-01 02:43:11,986 n: module.bert.encoder.layer.1.attention.output.LayerNorm.bias
+2022-06-01 02:43:11,986 n: module.bert.encoder.layer.1.intermediate.dense.weight
+2022-06-01 02:43:11,986 n: module.bert.encoder.layer.1.intermediate.dense.bias
+2022-06-01 02:43:11,986 n: module.bert.encoder.layer.1.output.dense.weight
+2022-06-01 02:43:11,986 n: module.bert.encoder.layer.1.output.dense.bias
+2022-06-01 02:43:11,986 n: module.bert.encoder.layer.1.output.LayerNorm.weight
+2022-06-01 02:43:11,986 n: module.bert.encoder.layer.1.output.LayerNorm.bias
+2022-06-01 02:43:11,987 n: module.bert.encoder.layer.2.attention.self.query.weight
+2022-06-01 02:43:11,987 n: module.bert.encoder.layer.2.attention.self.query.bias
+2022-06-01 02:43:11,987 n: module.bert.encoder.layer.2.attention.self.key.weight
+2022-06-01 02:43:11,987 n: module.bert.encoder.layer.2.attention.self.key.bias
+2022-06-01 02:43:11,987 n: module.bert.encoder.layer.2.attention.self.value.weight
+2022-06-01 02:43:11,987 n: module.bert.encoder.layer.2.attention.self.value.bias
+2022-06-01 02:43:11,987 n: module.bert.encoder.layer.2.attention.output.dense.weight
+2022-06-01 02:43:11,987 n: module.bert.encoder.layer.2.attention.output.dense.bias
+2022-06-01 02:43:11,987 n: module.bert.encoder.layer.2.attention.output.LayerNorm.weight
+2022-06-01 02:43:11,987 n: module.bert.encoder.layer.2.attention.output.LayerNorm.bias
+2022-06-01 02:43:11,987 n: module.bert.encoder.layer.2.intermediate.dense.weight
+2022-06-01 02:43:11,988 n: module.bert.encoder.layer.2.intermediate.dense.bias
+2022-06-01 02:43:11,988 n: module.bert.encoder.layer.2.output.dense.weight
+2022-06-01 02:43:11,988 n: module.bert.encoder.layer.2.output.dense.bias
+2022-06-01 02:43:11,988 n: module.bert.encoder.layer.2.output.LayerNorm.weight
+2022-06-01 02:43:11,988 n: module.bert.encoder.layer.2.output.LayerNorm.bias
+2022-06-01 02:43:11,988 n: module.bert.encoder.layer.3.attention.self.query.weight
+2022-06-01 02:43:11,988 n: module.bert.encoder.layer.3.attention.self.query.bias
+2022-06-01 02:43:11,988 n: module.bert.encoder.layer.3.attention.self.key.weight
+2022-06-01 02:43:11,988 n: module.bert.encoder.layer.3.attention.self.key.bias
+2022-06-01 02:43:11,988 n: module.bert.encoder.layer.3.attention.self.value.weight
+2022-06-01 02:43:11,988 n: module.bert.encoder.layer.3.attention.self.value.bias
+2022-06-01 02:43:11,988 n: module.bert.encoder.layer.3.attention.output.dense.weight
+2022-06-01 02:43:11,989 n: module.bert.encoder.layer.3.attention.output.dense.bias
+2022-06-01 02:43:11,989 n: module.bert.encoder.layer.3.attention.output.LayerNorm.weight
+2022-06-01 02:43:11,989 n: module.bert.encoder.layer.3.attention.output.LayerNorm.bias
+2022-06-01 02:43:11,989 n: module.bert.encoder.layer.3.intermediate.dense.weight
+2022-06-01 02:43:11,989 n: module.bert.encoder.layer.3.intermediate.dense.bias
+2022-06-01 02:43:11,989 n: module.bert.encoder.layer.3.output.dense.weight
+2022-06-01 02:43:11,989 n: module.bert.encoder.layer.3.output.dense.bias
+2022-06-01 02:43:11,989 n: module.bert.encoder.layer.3.output.LayerNorm.weight
+2022-06-01 02:43:11,989 n: module.bert.encoder.layer.3.output.LayerNorm.bias
+2022-06-01 02:43:11,989 n: module.bert.pooler.dense.weight
+2022-06-01 02:43:11,989 n: module.bert.pooler.dense.bias
+2022-06-01 02:43:11,990 n: module.classifier.weight
+2022-06-01 02:43:11,990 n: module.classifier.bias
+2022-06-01 02:43:11,990 n: module.share_fit_dense.weight
+2022-06-01 02:43:11,990 n: module.share_fit_dense.bias
+2022-06-01 02:43:11,990 n: module.fit_denses.0.weight
+2022-06-01 02:43:11,990 n: module.fit_denses.0.bias
+2022-06-01 02:43:11,990 n: module.fit_denses.1.weight
+2022-06-01 02:43:11,990 n: module.fit_denses.1.bias
+2022-06-01 02:43:11,990 n: module.fit_denses.2.weight
+2022-06-01 02:43:11,990 n: module.fit_denses.2.bias
+2022-06-01 02:43:11,990 n: module.fit_denses.3.weight
+2022-06-01 02:43:11,990 n: module.fit_denses.3.bias
+2022-06-01 02:43:11,991 n: module.fit_denses.4.weight
+2022-06-01 02:43:11,991 n: module.fit_denses.4.bias
+2022-06-01 02:43:11,991 Total parameters: 15793178
+2022-06-01 02:43:43,693 The args: Namespace(T=1.0, T_emd=1, add_softmax=True, alpha=1, aug_train=False, beta=0.01, cache_dir='', data_dir='../data/glue_data/MRPC/', data_url='', do_eval=False, do_lower_case=True, do_predict=False, emb_linear=False, eval_batch_size=64, eval_step=50, gradient_accumulation_steps=1, is_conv=False, is_teacher=True, learning_rate=3e-05, max_seq_len=128, max_seq_length=64, new_pred_loss=True, no_cuda=False, no_pretrain=False, num_train_epochs=10.0, one_step=True, output_dir='../model/MRPC/student/Model__1', pkd=False, pred_distill=False, reduce_T=1.0, seed=3598, seperate=False, share_param=True, student_model='../model/student/layer4/', task_name='MRPC', tb_onestep='', teacher_model='../model/MRPC/teacher/', theta=1.0, tinybert=False, train_batch_size=32, update_weight=True, use_att=True, use_embedding=True, use_emd=True, use_init_weight=False, use_rep=True, warmup_proportion=0.1, weight_decay=0.0001)
+2022-06-01 02:43:47,566 device: cuda n_gpu: 1
+2022-06-01 02:43:47,568 
+pred_distill:False
+use_emd:True
+seperate:False
+train_epoch:10.0
+
+2022-06-01 02:43:47,598 LOOKING AT ../data/glue_data/MRPC/train.tsv
+2022-06-01 02:43:47,617 Writing example 0 of 3668
+2022-06-01 02:43:47,618 *** Example ***
+2022-06-01 02:43:47,618 guid: train-1
+2022-06-01 02:43:47,618 tokens: [CLS] am ##ro ##zi accused his brother , whom he called " the witness " , of deliberately di ##stor ##ting his evidence . [SEP] referring to him as only " the witness " , am ##ro ##zi accused his brother of deliberately di ##stor ##ting his evidence . [SEP]
+2022-06-01 02:43:47,618 input_ids: 101 2572 3217 5831 5496 2010 2567 1010 3183 2002 2170 1000 1996 7409 1000 1010 1997 9969 4487 23809 3436 2010 3350 1012 102 7727 2000 2032 2004 2069 1000 1996 7409 1000 1010 2572 3217 5831 5496 2010 2567 1997 9969 4487 23809 3436 2010 3350 1012 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-06-01 02:43:47,618 input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-06-01 02:43:47,618 segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-06-01 02:43:47,618 label: 1
+2022-06-01 02:43:47,618 label_id: 1
+2022-06-01 02:43:50,072 Writing example 0 of 408
+2022-06-01 02:43:50,073 *** Example ***
+2022-06-01 02:43:50,073 guid: dev-1
+2022-06-01 02:43:50,073 tokens: [CLS] he said the foods ##er ##vic ##e pie business doesn ' t fit the company ' s long - term growth strategy . [SEP] " the foods ##er ##vic ##e pie business does not fit our long - term growth strategy . [SEP]
+2022-06-01 02:43:50,073 input_ids: 101 2002 2056 1996 9440 2121 7903 2063 11345 2449 2987 1005 1056 4906 1996 2194 1005 1055 2146 1011 2744 3930 5656 1012 102 1000 1996 9440 2121 7903 2063 11345 2449 2515 2025 4906 2256 2146 1011 2744 3930 5656 1012 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-06-01 02:43:50,074 input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-06-01 02:43:50,074 segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-06-01 02:43:50,074 label: 1
+2022-06-01 02:43:50,074 label_id: 1
+2022-06-01 02:43:50,323 Model config {
+  "_num_labels": 2,
+  "architectures": [
+    "BertForSequenceClassification"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": null,
+  "do_sample": false,
+  "early_stopping": false,
+  "eos_token_ids": null,
+  "finetuning_task": "mrpc",
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1"
+  },
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "is_decoder": false,
+  "is_encoder_decoder": false,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1
+  },
+  "layer_norm_eps": 1e-12,
+  "length_penalty": 1.0,
+  "max_length": 20,
+  "max_position_embeddings": 512,
+  "min_length": 0,
+  "model_type": "bert",
+  "no_repeat_ngram_size": 0,
+  "num_attention_heads": 12,
+  "num_beams": 1,
+  "num_hidden_layers": 12,
+  "num_return_sequences": 1,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": null,
+  "pre_trained": "",
+  "pruned_heads": {},
+  "repetition_penalty": 1.0,
+  "temperature": 1.0,
+  "top_k": 50,
+  "top_p": 1.0,
+  "torchscript": false,
+  "training": "",
+  "type_vocab_size": 2,
+  "use_bfloat16": false,
+  "vocab_size": 30522
+}
+
+2022-06-01 02:43:52,866 Loading model ../model/MRPC/teacher/pytorch_model.bin
+2022-06-01 02:43:53,118 loading model...
+2022-06-01 02:43:53,180 done!
+2022-06-01 02:43:53,180 Weights of TinyBertForSequenceClassification not initialized from pretrained model: ['share_fit_dense.weight', 'share_fit_dense.bias', 'fit_denses.0.weight', 'fit_denses.0.bias', 'fit_denses.1.weight', 'fit_denses.1.bias', 'fit_denses.2.weight', 'fit_denses.2.bias', 'fit_denses.3.weight', 'fit_denses.3.bias', 'fit_denses.4.weight', 'fit_denses.4.bias', 'fit_denses.5.weight', 'fit_denses.5.bias', 'fit_denses.6.weight', 'fit_denses.6.bias', 'fit_denses.7.weight', 'fit_denses.7.bias', 'fit_denses.8.weight', 'fit_denses.8.bias', 'fit_denses.9.weight', 'fit_denses.9.bias', 'fit_denses.10.weight', 'fit_denses.10.bias', 'fit_denses.11.weight', 'fit_denses.11.bias', 'fit_denses.12.weight', 'fit_denses.12.bias']
+2022-06-01 02:43:55,680 Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "cell": {},
+  "emb_size": 312,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 312,
+  "initializer_range": 0.02,
+  "intermediate_size": 1200,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 4,
+  "output_attentions": true,
+  "output_hidden_states": true,
+  "pre_trained": "",
+  "structure": [],
+  "student": true,
+  "teacher_num_hidden_layers": 12,
+  "training": "",
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}
+
+2022-06-01 02:43:56,022 Loading model ../model/student/layer4/pytorch_model.bin
+2022-06-01 02:43:56,063 loading model...
+2022-06-01 02:43:56,072 done!
+2022-06-01 02:43:56,072 Weights of TinyBertForSequenceClassification not initialized from pretrained model: ['classifier.weight', 'classifier.bias', 'share_fit_dense.weight', 'share_fit_dense.bias']
+2022-06-01 02:43:56,073 Weights from pretrained model not used in TinyBertForSequenceClassification: ['cls.predictions.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.dense.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.LayerNorm.bias', 'cls.predictions.decoder.weight', 'cls.seq_relationship.weight', 'cls.seq_relationship.bias']
+2022-06-01 02:43:56,090 ***** Running training *****
+2022-06-01 02:43:56,090   Num examples = 3668
+2022-06-01 02:43:56,090   Batch size = 32
+2022-06-01 02:43:56,090   Num steps = 1140
+2022-06-01 02:43:56,091 n: bert.embeddings.word_embeddings.weight
+2022-06-01 02:43:56,091 n: bert.embeddings.position_embeddings.weight
+2022-06-01 02:43:56,091 n: bert.embeddings.token_type_embeddings.weight
+2022-06-01 02:43:56,091 n: bert.embeddings.LayerNorm.weight
+2022-06-01 02:43:56,091 n: bert.embeddings.LayerNorm.bias
+2022-06-01 02:43:56,091 n: bert.encoder.layer.0.attention.self.query.weight
+2022-06-01 02:43:56,091 n: bert.encoder.layer.0.attention.self.query.bias
+2022-06-01 02:43:56,091 n: bert.encoder.layer.0.attention.self.key.weight
+2022-06-01 02:43:56,091 n: bert.encoder.layer.0.attention.self.key.bias
+2022-06-01 02:43:56,091 n: bert.encoder.layer.0.attention.self.value.weight
+2022-06-01 02:43:56,091 n: bert.encoder.layer.0.attention.self.value.bias
+2022-06-01 02:43:56,091 n: bert.encoder.layer.0.attention.output.dense.weight
+2022-06-01 02:43:56,091 n: bert.encoder.layer.0.attention.output.dense.bias
+2022-06-01 02:43:56,092 n: bert.encoder.layer.0.attention.output.LayerNorm.weight
+2022-06-01 02:43:56,092 n: bert.encoder.layer.0.attention.output.LayerNorm.bias
+2022-06-01 02:43:56,092 n: bert.encoder.layer.0.intermediate.dense.weight
+2022-06-01 02:43:56,092 n: bert.encoder.layer.0.intermediate.dense.bias
+2022-06-01 02:43:56,092 n: bert.encoder.layer.0.output.dense.weight
+2022-06-01 02:43:56,092 n: bert.encoder.layer.0.output.dense.bias
+2022-06-01 02:43:56,092 n: bert.encoder.layer.0.output.LayerNorm.weight
+2022-06-01 02:43:56,092 n: bert.encoder.layer.0.output.LayerNorm.bias
+2022-06-01 02:43:56,092 n: bert.encoder.layer.1.attention.self.query.weight
+2022-06-01 02:43:56,092 n: bert.encoder.layer.1.attention.self.query.bias
+2022-06-01 02:43:56,092 n: bert.encoder.layer.1.attention.self.key.weight
+2022-06-01 02:43:56,092 n: bert.encoder.layer.1.attention.self.key.bias
+2022-06-01 02:43:56,092 n: bert.encoder.layer.1.attention.self.value.weight
+2022-06-01 02:43:56,092 n: bert.encoder.layer.1.attention.self.value.bias
+2022-06-01 02:43:56,092 n: bert.encoder.layer.1.attention.output.dense.weight
+2022-06-01 02:43:56,092 n: bert.encoder.layer.1.attention.output.dense.bias
+2022-06-01 02:43:56,092 n: bert.encoder.layer.1.attention.output.LayerNorm.weight
+2022-06-01 02:43:56,093 n: bert.encoder.layer.1.attention.output.LayerNorm.bias
+2022-06-01 02:43:56,093 n: bert.encoder.layer.1.intermediate.dense.weight
+2022-06-01 02:43:56,093 n: bert.encoder.layer.1.intermediate.dense.bias
+2022-06-01 02:43:56,093 n: bert.encoder.layer.1.output.dense.weight
+2022-06-01 02:43:56,093 n: bert.encoder.layer.1.output.dense.bias
+2022-06-01 02:43:56,093 n: bert.encoder.layer.1.output.LayerNorm.weight
+2022-06-01 02:43:56,093 n: bert.encoder.layer.1.output.LayerNorm.bias
+2022-06-01 02:43:56,093 n: bert.encoder.layer.2.attention.self.query.weight
+2022-06-01 02:43:56,093 n: bert.encoder.layer.2.attention.self.query.bias
+2022-06-01 02:43:56,093 n: bert.encoder.layer.2.attention.self.key.weight
+2022-06-01 02:43:56,093 n: bert.encoder.layer.2.attention.self.key.bias
+2022-06-01 02:43:56,093 n: bert.encoder.layer.2.attention.self.value.weight
+2022-06-01 02:43:56,093 n: bert.encoder.layer.2.attention.self.value.bias
+2022-06-01 02:43:56,093 n: bert.encoder.layer.2.attention.output.dense.weight
+2022-06-01 02:43:56,093 n: bert.encoder.layer.2.attention.output.dense.bias
+2022-06-01 02:43:56,093 n: bert.encoder.layer.2.attention.output.LayerNorm.weight
+2022-06-01 02:43:56,094 n: bert.encoder.layer.2.attention.output.LayerNorm.bias
+2022-06-01 02:43:56,094 n: bert.encoder.layer.2.intermediate.dense.weight
+2022-06-01 02:43:56,094 n: bert.encoder.layer.2.intermediate.dense.bias
+2022-06-01 02:43:56,094 n: bert.encoder.layer.2.output.dense.weight
+2022-06-01 02:43:56,094 n: bert.encoder.layer.2.output.dense.bias
+2022-06-01 02:43:56,094 n: bert.encoder.layer.2.output.LayerNorm.weight
+2022-06-01 02:43:56,094 n: bert.encoder.layer.2.output.LayerNorm.bias
+2022-06-01 02:43:56,094 n: bert.encoder.layer.3.attention.self.query.weight
+2022-06-01 02:43:56,094 n: bert.encoder.layer.3.attention.self.query.bias
+2022-06-01 02:43:56,094 n: bert.encoder.layer.3.attention.self.key.weight
+2022-06-01 02:43:56,094 n: bert.encoder.layer.3.attention.self.key.bias
+2022-06-01 02:43:56,094 n: bert.encoder.layer.3.attention.self.value.weight
+2022-06-01 02:43:56,094 n: bert.encoder.layer.3.attention.self.value.bias
+2022-06-01 02:43:56,094 n: bert.encoder.layer.3.attention.output.dense.weight
+2022-06-01 02:43:56,094 n: bert.encoder.layer.3.attention.output.dense.bias
+2022-06-01 02:43:56,094 n: bert.encoder.layer.3.attention.output.LayerNorm.weight
+2022-06-01 02:43:56,094 n: bert.encoder.layer.3.attention.output.LayerNorm.bias
+2022-06-01 02:43:56,095 n: bert.encoder.layer.3.intermediate.dense.weight
+2022-06-01 02:43:56,095 n: bert.encoder.layer.3.intermediate.dense.bias
+2022-06-01 02:43:56,095 n: bert.encoder.layer.3.output.dense.weight
+2022-06-01 02:43:56,095 n: bert.encoder.layer.3.output.dense.bias
+2022-06-01 02:43:56,095 n: bert.encoder.layer.3.output.LayerNorm.weight
+2022-06-01 02:43:56,095 n: bert.encoder.layer.3.output.LayerNorm.bias
+2022-06-01 02:43:56,095 n: bert.pooler.dense.weight
+2022-06-01 02:43:56,095 n: bert.pooler.dense.bias
+2022-06-01 02:43:56,095 n: classifier.weight
+2022-06-01 02:43:56,095 n: classifier.bias
+2022-06-01 02:43:56,095 n: share_fit_dense.weight
+2022-06-01 02:43:56,095 n: share_fit_dense.bias
+2022-06-01 02:43:56,095 n: fit_denses.0.weight
+2022-06-01 02:43:56,095 n: fit_denses.0.bias
+2022-06-01 02:43:56,095 n: fit_denses.1.weight
+2022-06-01 02:43:56,095 n: fit_denses.1.bias
+2022-06-01 02:43:56,095 n: fit_denses.2.weight
+2022-06-01 02:43:56,096 n: fit_denses.2.bias
+2022-06-01 02:43:56,096 n: fit_denses.3.weight
+2022-06-01 02:43:56,096 n: fit_denses.3.bias
+2022-06-01 02:43:56,096 n: fit_denses.4.weight
+2022-06-01 02:43:56,096 n: fit_denses.4.bias
+2022-06-01 02:43:56,096 Total parameters: 15793178
+2022-06-01 02:43:56,214 all_student_weight:[0.2043788  0.27025599 0.29032797 0.23503724]
+2022-06-01 02:43:56,214 all_teacher_weight:[0.08942663 0.05964412 0.11406813 0.05668026 0.05441246 0.14354448
+ 0.06880366 0.08022887 0.1036916  0.06481654 0.06170025 0.10298299]
+2022-06-01 02:44:04,835 ***** Running evaluation *****
+2022-06-01 02:44:04,835   Epoch = 0 iter 49 step
+2022-06-01 02:44:04,835   Num examples = 408
+2022-06-01 02:44:04,835   Batch size = 64
+2022-06-01 02:44:05,079 ***** Eval results *****
+2022-06-01 02:44:05,079   acc = 0.7549019607843137
+2022-06-01 02:44:05,079   acc_and_f1 = 0.7906454248366013
+2022-06-01 02:44:05,079   att_loss = 3.554569439012177
+2022-06-01 02:44:05,079   cls_loss = 0.32236207565482783
+2022-06-01 02:44:05,079   eval_loss = 0.5390105758394513
+2022-06-01 02:44:05,079   f1 = 0.826388888888889
+2022-06-01 02:44:05,080   global_step = 49
+2022-06-01 02:44:05,080   loss = 0.3670830513749804
+2022-06-01 02:44:05,080   rep_loss = 0.555354473542194
+2022-06-01 02:44:05,080 ***** Save model *****
+2022-06-01 02:44:05,223 ***** Eval results *****
+2022-06-01 02:44:05,223   acc = 0.7549019607843137
+2022-06-01 02:44:05,223   acc_and_f1 = 0.7906454248366013
+2022-06-01 02:44:05,223   att_loss = 3.554569439012177
+2022-06-01 02:44:05,223   best_acc = 0.7549019607843137
+2022-06-01 02:44:05,223   cls_loss = 0.32236207565482783
+2022-06-01 02:44:05,223   eval_loss = 0.5390105758394513
+2022-06-01 02:44:05,223   f1 = 0.826388888888889
+2022-06-01 02:44:05,223   global_step = 49
+2022-06-01 02:44:05,223   loss = 0.3670830513749804
+2022-06-01 02:44:05,223   rep_loss = 0.555354473542194
+2022-06-01 02:44:05,493 all_student_weight:[0.21094635 0.25895637 0.24296983 0.28712745]
+2022-06-01 02:44:05,493 all_teacher_weight:[0.08859746 0.06535424 0.09537805 0.06082031 0.06916267 0.12156826
+ 0.06693053 0.07874511 0.0940014  0.06957943 0.06851576 0.12134678]
+2022-06-01 02:44:13,614 ***** Running evaluation *****
+2022-06-01 02:44:13,615   Epoch = 0 iter 99 step
+2022-06-01 02:44:13,615   Num examples = 408
+2022-06-01 02:44:13,615   Batch size = 64
+2022-06-01 02:44:13,865 ***** Eval results *****
+2022-06-01 02:44:13,865   acc = 0.7892156862745098
+2022-06-01 02:44:13,865   acc_and_f1 = 0.8243464052287581
+2022-06-01 02:44:13,865   att_loss = 3.4499595261583424
+2022-06-01 02:44:13,865   cls_loss = 0.3119162790703051
+2022-06-01 02:44:13,865   eval_loss = 0.4830697051116398
+2022-06-01 02:44:13,865   f1 = 0.8594771241830065
+2022-06-01 02:44:13,865   global_step = 99
+2022-06-01 02:44:13,865   loss = 0.35520439376734725
+2022-06-01 02:44:13,865   rep_loss = 0.53133885697885
+2022-06-01 02:44:13,865 ***** Save model *****
+2022-06-01 02:44:14,298 ***** Eval results *****
+2022-06-01 02:44:14,298   acc = 0.7892156862745098
+2022-06-01 02:44:14,298   acc_and_f1 = 0.8243464052287581
+2022-06-01 02:44:14,298   att_loss = 3.4499595261583424
+2022-06-01 02:44:14,298   best_acc = 0.7892156862745098
+2022-06-01 02:44:14,298   cls_loss = 0.3119162790703051
+2022-06-01 02:44:14,298   eval_loss = 0.4830697051116398
+2022-06-01 02:44:14,298   f1 = 0.8594771241830065
+2022-06-01 02:44:14,298   global_step = 99
+2022-06-01 02:44:14,299   loss = 0.35520439376734725
+2022-06-01 02:44:14,299   rep_loss = 0.53133885697885
+2022-06-01 02:44:14,581 all_student_weight:[0.2045294  0.25776682 0.25098879 0.28671499]
+2022-06-01 02:44:14,582 all_teacher_weight:[0.08899799 0.06341261 0.09024519 0.06025324 0.06962614 0.11441483
+ 0.06896876 0.07724478 0.10054319 0.07447524 0.07183462 0.11998341]
+2022-06-01 02:44:22,685 ***** Running evaluation *****
+2022-06-01 02:44:22,685   Epoch = 1 iter 149 step
+2022-06-01 02:44:22,685   Num examples = 408
+2022-06-01 02:44:22,685   Batch size = 64
+2022-06-01 02:44:22,935 ***** Eval results *****
+2022-06-01 02:44:22,936   acc = 0.8137254901960784
+2022-06-01 02:44:22,936   acc_and_f1 = 0.8420163287157867
+2022-06-01 02:44:22,936   att_loss = 3.2770823683057513
+2022-06-01 02:44:22,936   cls_loss = 0.27186195126601626
+2022-06-01 02:44:22,936   eval_loss = 0.41951628242220196
+2022-06-01 02:44:22,936   f1 = 0.870307167235495
+2022-06-01 02:44:22,936   global_step = 149
+2022-06-01 02:44:22,936   loss = 0.31254083599363053
+2022-06-01 02:44:22,936   rep_loss = 0.48041127238954817
+2022-06-01 02:44:22,936 ***** Save model *****
+2022-06-01 02:44:23,518 ***** Eval results *****
+2022-06-01 02:44:23,518   acc = 0.8137254901960784
+2022-06-01 02:44:23,518   acc_and_f1 = 0.8420163287157867
+2022-06-01 02:44:23,518   att_loss = 3.2770823683057513
+2022-06-01 02:44:23,518   best_acc = 0.8137254901960784
+2022-06-01 02:44:23,519   cls_loss = 0.27186195126601626
+2022-06-01 02:44:23,519   eval_loss = 0.41951628242220196
+2022-06-01 02:44:23,519   f1 = 0.870307167235495
+2022-06-01 02:44:23,519   global_step = 149
+2022-06-01 02:44:23,519   loss = 0.31254083599363053
+2022-06-01 02:44:23,519   rep_loss = 0.48041127238954817
+2022-06-01 02:44:23,802 all_student_weight:[0.20655221 0.26616548 0.24611516 0.28116716]
+2022-06-01 02:44:23,802 all_teacher_weight:[0.08879711 0.0627877  0.09020504 0.06133632 0.07090385 0.11886491
+ 0.06946215 0.07666325 0.09508994 0.0753581  0.07435802 0.11617361]
+2022-06-01 02:44:31,972 ***** Running evaluation *****
+2022-06-01 02:44:31,973   Epoch = 1 iter 199 step
+2022-06-01 02:44:31,973   Num examples = 408
+2022-06-01 02:44:31,973   Batch size = 64
+2022-06-01 02:44:32,223 ***** Eval results *****
+2022-06-01 02:44:32,223   acc = 0.8088235294117647
+2022-06-01 02:44:32,223   acc_and_f1 = 0.8357497928748965
+2022-06-01 02:44:32,223   att_loss = 3.267875404918895
+2022-06-01 02:44:32,223   cls_loss = 0.2719754241845187
+2022-06-01 02:44:32,223   eval_loss = 0.42685280101639883
+2022-06-01 02:44:32,223   f1 = 0.8626760563380282
+2022-06-01 02:44:32,223   global_step = 199
+2022-06-01 02:44:32,223   loss = 0.31243450852001414
+2022-06-01 02:44:32,223   rep_loss = 0.4738073492751402
+2022-06-01 02:44:32,488 all_student_weight:[0.20594143 0.26780587 0.24887302 0.27737969]
+2022-06-01 02:44:32,488 all_teacher_weight:[0.08867071 0.06226375 0.08686179 0.06180258 0.07117606 0.11967099
+ 0.07062543 0.07833559 0.09557554 0.07663992 0.07448894 0.11388871]
+2022-06-01 02:44:40,638 ***** Running evaluation *****
+2022-06-01 02:44:40,639   Epoch = 2 iter 249 step
+2022-06-01 02:44:40,639   Num examples = 408
+2022-06-01 02:44:40,639   Batch size = 64
+2022-06-01 02:44:40,889 ***** Eval results *****
+2022-06-01 02:44:40,889   acc = 0.8186274509803921
+2022-06-01 02:44:40,890   acc_and_f1 = 0.845739842328684
+2022-06-01 02:44:40,890   att_loss = 3.2439392861865817
+2022-06-01 02:44:40,890   cls_loss = 0.2525951131468728
+2022-06-01 02:44:40,890   eval_loss = 0.41547911933490206
+2022-06-01 02:44:40,890   f1 = 0.872852233676976
+2022-06-01 02:44:40,890   global_step = 249
+2022-06-01 02:44:40,890   loss = 0.29245337418147493
+2022-06-01 02:44:40,890   rep_loss = 0.4558000536192031
+2022-06-01 02:44:40,890 ***** Save model *****
+2022-06-01 02:44:41,509 ***** Eval results *****
+2022-06-01 02:44:41,509   acc = 0.8186274509803921
+2022-06-01 02:44:41,509   acc_and_f1 = 0.845739842328684
+2022-06-01 02:44:41,509   att_loss = 3.2439392861865817
+2022-06-01 02:44:41,509   best_acc = 0.8186274509803921
+2022-06-01 02:44:41,509   cls_loss = 0.2525951131468728
+2022-06-01 02:44:41,509   eval_loss = 0.41547911933490206
+2022-06-01 02:44:41,510   f1 = 0.872852233676976
+2022-06-01 02:44:41,510   global_step = 249
+2022-06-01 02:44:41,510   loss = 0.29245337418147493
+2022-06-01 02:44:41,510   rep_loss = 0.4558000536192031
+2022-06-01 02:44:41,786 all_student_weight:[0.20346654 0.26400715 0.25443549 0.27809082]
+2022-06-01 02:44:41,787 all_teacher_weight:[0.08714211 0.06154749 0.08377499 0.06194713 0.06946956 0.11550569
+ 0.06971574 0.07893633 0.10032211 0.07660952 0.07560429 0.11942504]
+2022-06-01 02:44:49,951 ***** Running evaluation *****
+2022-06-01 02:44:49,952   Epoch = 2 iter 299 step
+2022-06-01 02:44:49,952   Num examples = 408
+2022-06-01 02:44:49,952   Batch size = 64
+2022-06-01 02:44:50,214 ***** Eval results *****
+2022-06-01 02:44:50,214   acc = 0.8284313725490197
+2022-06-01 02:44:50,214   acc_and_f1 = 0.8540782292298363
+2022-06-01 02:44:50,214   att_loss = 3.2064456234515553
+2022-06-01 02:44:50,215   cls_loss = 0.25714776801391387
+2022-06-01 02:44:50,215   eval_loss = 0.4197054718221937
+2022-06-01 02:44:50,215   f1 = 0.8797250859106529
+2022-06-01 02:44:50,215   global_step = 299
+2022-06-01 02:44:50,215   loss = 0.29653005532815424
+2022-06-01 02:44:50,215   rep_loss = 0.45140694060795744
+2022-06-01 02:44:50,215 ***** Save model *****
+2022-06-01 02:44:50,625 ***** Eval results *****
+2022-06-01 02:44:50,626   acc = 0.8284313725490197
+2022-06-01 02:44:50,626   acc_and_f1 = 0.8540782292298363
+2022-06-01 02:44:50,626   att_loss = 3.2064456234515553
+2022-06-01 02:44:50,626   best_acc = 0.8284313725490197
+2022-06-01 02:44:50,626   cls_loss = 0.25714776801391387
+2022-06-01 02:44:50,626   eval_loss = 0.4197054718221937
+2022-06-01 02:44:50,626   f1 = 0.8797250859106529
+2022-06-01 02:44:50,626   global_step = 299
+2022-06-01 02:44:50,626   loss = 0.29653005532815424
+2022-06-01 02:44:50,626   rep_loss = 0.45140694060795744
+2022-06-01 02:44:50,903 all_student_weight:[0.20716867 0.26515877 0.24968829 0.27798427]
+2022-06-01 02:44:50,903 all_teacher_weight:[0.08707032 0.06230287 0.08498636 0.06287133 0.07077022 0.1201238
+ 0.07069204 0.07919886 0.09687256 0.07556264 0.07296349 0.11658551]
+2022-06-01 02:44:59,060 ***** Running evaluation *****
+2022-06-01 02:44:59,060   Epoch = 3 iter 349 step
+2022-06-01 02:44:59,060   Num examples = 408
+2022-06-01 02:44:59,060   Batch size = 64
+2022-06-01 02:44:59,321 ***** Eval results *****
+2022-06-01 02:44:59,321   acc = 0.821078431372549
+2022-06-01 02:44:59,321   acc_and_f1 = 0.8513820033686084
+2022-06-01 02:44:59,321   att_loss = 3.159403085708618
+2022-06-01 02:44:59,321   cls_loss = 0.25064582909856525
+2022-06-01 02:44:59,321   eval_loss = 0.4095572360924312
+2022-06-01 02:44:59,321   f1 = 0.8816855753646677
+2022-06-01 02:44:59,321   global_step = 349
+2022-06-01 02:44:59,321   loss = 0.28931368248803274
+2022-06-01 02:44:59,321   rep_loss = 0.4397814316408975
+2022-06-01 02:44:59,586 all_student_weight:[0.20788143 0.26660006 0.25102708 0.27449143]
+2022-06-01 02:44:59,587 all_teacher_weight:[0.08708757 0.06216899 0.0850763  0.06353939 0.0690427  0.11987305
+ 0.07126511 0.0793998  0.09898709 0.0752629  0.07187575 0.11642136]
+2022-06-01 02:45:07,731 ***** Running evaluation *****
+2022-06-01 02:45:07,732   Epoch = 3 iter 399 step
+2022-06-01 02:45:07,732   Num examples = 408
+2022-06-01 02:45:07,732   Batch size = 64
+2022-06-01 02:45:07,989 ***** Eval results *****
+2022-06-01 02:45:07,989   acc = 0.8112745098039216
+2022-06-01 02:45:07,989   acc_and_f1 = 0.8432385514983951
+2022-06-01 02:45:07,989   att_loss = 3.180644415972526
+2022-06-01 02:45:07,989   cls_loss = 0.2496906278426187
+2022-06-01 02:45:07,989   eval_loss = 0.4248065778187343
+2022-06-01 02:45:07,989   f1 = 0.8752025931928687
+2022-06-01 02:45:07,989   global_step = 399
+2022-06-01 02:45:07,989   loss = 0.28852494453129013
+2022-06-01 02:45:07,989   rep_loss = 0.43758060116516917
+2022-06-01 02:45:08,258 all_student_weight:[0.20738081 0.26588631 0.2511537  0.27557917]
+2022-06-01 02:45:08,258 all_teacher_weight:[0.08726622 0.06156048 0.08549408 0.06337275 0.06871963 0.11672371
+ 0.07002011 0.07856994 0.09999081 0.07504378 0.07386068 0.11937781]
+2022-06-01 02:45:16,423 ***** Running evaluation *****
+2022-06-01 02:45:16,424   Epoch = 3 iter 449 step
+2022-06-01 02:45:16,424   Num examples = 408
+2022-06-01 02:45:16,424   Batch size = 64
+2022-06-01 02:45:16,677 ***** Eval results *****
+2022-06-01 02:45:16,677   acc = 0.8259803921568627
+2022-06-01 02:45:16,677   acc_and_f1 = 0.8545058468197821
+2022-06-01 02:45:16,677   att_loss = 3.190186101699544
+2022-06-01 02:45:16,677   cls_loss = 0.24896090289699696
+2022-06-01 02:45:16,677   eval_loss = 0.40730554716927664
+2022-06-01 02:45:16,677   f1 = 0.8830313014827017
+2022-06-01 02:45:16,677   global_step = 449
+2022-06-01 02:45:16,678   loss = 0.2878408022573061
+2022-06-01 02:45:16,678   rep_loss = 0.4350743641920179
+2022-06-01 02:45:16,943 all_student_weight:[0.20689168 0.26766939 0.25238226 0.27305667]
+2022-06-01 02:45:16,943 all_teacher_weight:[0.08768875 0.0610198  0.08494535 0.0633125  0.07093857 0.11595934
+ 0.07289545 0.08122302 0.09881807 0.07625692 0.07227558 0.11466664]
+2022-06-01 02:45:25,103 ***** Running evaluation *****
+2022-06-01 02:45:25,104   Epoch = 4 iter 499 step
+2022-06-01 02:45:25,104   Num examples = 408
+2022-06-01 02:45:25,104   Batch size = 64
+2022-06-01 02:45:25,358 ***** Eval results *****
+2022-06-01 02:45:25,358   acc = 0.8308823529411765
+2022-06-01 02:45:25,358   acc_and_f1 = 0.8580368503474601
+2022-06-01 02:45:25,358   att_loss = 3.198286915934363
+2022-06-01 02:45:25,358   cls_loss = 0.24107104193332585
+2022-06-01 02:45:25,358   eval_loss = 0.404327677828925
+2022-06-01 02:45:25,358   f1 = 0.8851913477537438
+2022-06-01 02:45:25,358   global_step = 499
+2022-06-01 02:45:25,358   loss = 0.27987626818723454
+2022-06-01 02:45:25,358   rep_loss = 0.42729918277540874
+2022-06-01 02:45:25,358 ***** Save model *****
+2022-06-01 02:45:25,750 ***** Eval results *****
+2022-06-01 02:45:25,751   acc = 0.8308823529411765
+2022-06-01 02:45:25,751   acc_and_f1 = 0.8580368503474601
+2022-06-01 02:45:25,751   att_loss = 3.198286915934363
+2022-06-01 02:45:25,751   best_acc = 0.8308823529411765
+2022-06-01 02:45:25,751   cls_loss = 0.24107104193332585
+2022-06-01 02:45:25,751   eval_loss = 0.404327677828925
+2022-06-01 02:45:25,751   f1 = 0.8851913477537438
+2022-06-01 02:45:25,751   global_step = 499
+2022-06-01 02:45:25,751   loss = 0.27987626818723454
+2022-06-01 02:45:25,751   rep_loss = 0.42729918277540874
+2022-06-01 02:45:26,030 all_student_weight:[0.20555752 0.27098691 0.25356664 0.26988893]
+2022-06-01 02:45:26,031 all_teacher_weight:[0.08578964 0.06051665 0.08332951 0.06346384 0.07105854 0.11871577
+ 0.07301697 0.08214693 0.09676077 0.07699645 0.07533815 0.11286678]
+2022-06-01 02:45:34,254 ***** Running evaluation *****
+2022-06-01 02:45:34,255   Epoch = 4 iter 549 step
+2022-06-01 02:45:34,255   Num examples = 408
+2022-06-01 02:45:34,255   Batch size = 64
+2022-06-01 02:45:34,510 ***** Eval results *****
+2022-06-01 02:45:34,510   acc = 0.8357843137254902
+2022-06-01 02:45:34,510   acc_and_f1 = 0.8617782540151739
+2022-06-01 02:45:34,510   att_loss = 3.1851205415623163
+2022-06-01 02:45:34,511   cls_loss = 0.24140631703920262
+2022-06-01 02:45:34,511   eval_loss = 0.39277605073792593
+2022-06-01 02:45:34,511   f1 = 0.8877721943048577
+2022-06-01 02:45:34,511   global_step = 549
+2022-06-01 02:45:34,511   loss = 0.2800357739130656
+2022-06-01 02:45:34,511   rep_loss = 0.4249106639175005
+2022-06-01 02:45:34,511 ***** Save model *****
+2022-06-01 02:45:34,703 ***** Eval results *****
+2022-06-01 02:45:34,703   acc = 0.8357843137254902
+2022-06-01 02:45:34,703   acc_and_f1 = 0.8617782540151739
+2022-06-01 02:45:34,703   att_loss = 3.1851205415623163
+2022-06-01 02:45:34,703   best_acc = 0.8357843137254902
+2022-06-01 02:45:34,703   cls_loss = 0.24140631703920262
+2022-06-01 02:45:34,703   eval_loss = 0.39277605073792593
+2022-06-01 02:45:34,703   f1 = 0.8877721943048577
+2022-06-01 02:45:34,703   global_step = 549
+2022-06-01 02:45:34,704   loss = 0.2800357739130656
+2022-06-01 02:45:34,704   rep_loss = 0.4249106639175005
+2022-06-01 02:45:34,969 all_student_weight:[0.20825778 0.26462561 0.25093153 0.27618508]
+2022-06-01 02:45:34,969 all_teacher_weight:[0.08710306 0.06159994 0.08315151 0.06465328 0.07043776 0.11547265
+ 0.07155587 0.08032684 0.09924647 0.07509265 0.07322162 0.11813835]
+2022-06-01 02:45:43,159 ***** Running evaluation *****
+2022-06-01 02:45:43,160   Epoch = 5 iter 599 step
+2022-06-01 02:45:43,160   Num examples = 408
+2022-06-01 02:45:43,160   Batch size = 64
+2022-06-01 02:45:43,413 ***** Eval results *****
+2022-06-01 02:45:43,414   acc = 0.8308823529411765
+2022-06-01 02:45:43,414   acc_and_f1 = 0.8580368503474601
+2022-06-01 02:45:43,414   att_loss = 3.1410297032060295
+2022-06-01 02:45:43,414   cls_loss = 0.2452320204726581
+2022-06-01 02:45:43,414   eval_loss = 0.4105059632233211
+2022-06-01 02:45:43,414   f1 = 0.8851913477537438
+2022-06-01 02:45:43,414   global_step = 599
+2022-06-01 02:45:43,414   loss = 0.2832737513657274
+2022-06-01 02:45:43,414   rep_loss = 0.41798891795092613
+2022-06-01 02:45:43,684 all_student_weight:[0.20916999 0.26817561 0.25046831 0.2721861 ]
+2022-06-01 02:45:43,684 all_teacher_weight:[0.0857368  0.06112176 0.08524085 0.06434176 0.06985716 0.11950143
+ 0.07251881 0.08033923 0.09837664 0.07476125 0.07211143 0.1160929 ]
+2022-06-01 02:45:51,857 ***** Running evaluation *****
+2022-06-01 02:45:51,858   Epoch = 5 iter 649 step
+2022-06-01 02:45:51,858   Num examples = 408
+2022-06-01 02:45:51,858   Batch size = 64
+2022-06-01 02:45:52,111 ***** Eval results *****
+2022-06-01 02:45:52,112   acc = 0.8308823529411765
+2022-06-01 02:45:52,112   acc_and_f1 = 0.856867322480775
+2022-06-01 02:45:52,112   att_loss = 3.148773633981053
+2022-06-01 02:45:52,112   cls_loss = 0.24273605003387114
+2022-06-01 02:45:52,112   eval_loss = 0.40495122756276813
+2022-06-01 02:45:52,112   f1 = 0.8828522920203735
+2022-06-01 02:45:52,112   global_step = 649
+2022-06-01 02:45:52,112   loss = 0.2808138128322891
+2022-06-01 02:45:52,112   rep_loss = 0.4158878051027467
+2022-06-01 02:45:52,381 all_student_weight:[0.21044812 0.2652741  0.25104378 0.273234  ]
+2022-06-01 02:45:52,382 all_teacher_weight:[0.08688084 0.06161895 0.08454669 0.06531502 0.07151883 0.11420809
+ 0.0727728  0.08134994 0.09870449 0.07550726 0.07219297 0.11538412]
+2022-06-01 02:46:00,561 ***** Running evaluation *****
+2022-06-01 02:46:00,562   Epoch = 6 iter 699 step
+2022-06-01 02:46:00,562   Num examples = 408
+2022-06-01 02:46:00,562   Batch size = 64
+2022-06-01 02:46:00,816 ***** Eval results *****
+2022-06-01 02:46:00,816   acc = 0.8186274509803921
+2022-06-01 02:46:00,816   acc_and_f1 = 0.848257619879635
+2022-06-01 02:46:00,816   att_loss = 3.1308923880259196
+2022-06-01 02:46:00,816   cls_loss = 0.23977762460708618
+2022-06-01 02:46:00,816   eval_loss = 0.41418929610933575
+2022-06-01 02:46:00,817   f1 = 0.8778877887788779
+2022-06-01 02:46:00,817   global_step = 699
+2022-06-01 02:46:00,817   loss = 0.27756754954655966
+2022-06-01 02:46:00,817   rep_loss = 0.4104591906070709
+2022-06-01 02:46:01,082 all_student_weight:[0.20994981 0.26386771 0.25172542 0.27445706]
+2022-06-01 02:46:01,083 all_teacher_weight:[0.08536952 0.06141913 0.0830256  0.06555248 0.07044634 0.11527493
+ 0.07263732 0.08099495 0.09878868 0.07569509 0.07304521 0.11775074]
+2022-06-01 02:46:09,239 ***** Running evaluation *****
+2022-06-01 02:46:09,240   Epoch = 6 iter 749 step
+2022-06-01 02:46:09,240   Num examples = 408
+2022-06-01 02:46:09,240   Batch size = 64
+2022-06-01 02:46:09,494 ***** Eval results *****
+2022-06-01 02:46:09,494   acc = 0.8382352941176471
+2022-06-01 02:46:09,494   acc_and_f1 = 0.8629951980792316
+2022-06-01 02:46:09,494   att_loss = 3.142548887546246
+2022-06-01 02:46:09,494   cls_loss = 0.23951010406017303
+2022-06-01 02:46:09,494   eval_loss = 0.39319489683423725
+2022-06-01 02:46:09,494   f1 = 0.8877551020408163
+2022-06-01 02:46:09,494   global_step = 749
+2022-06-01 02:46:09,494   loss = 0.2773969338490413
+2022-06-01 02:46:09,494   rep_loss = 0.4090020954608917
+2022-06-01 02:46:09,494 ***** Save model *****
+2022-06-01 02:46:10,082 ***** Eval results *****
+2022-06-01 02:46:10,082   acc = 0.8382352941176471
+2022-06-01 02:46:10,082   acc_and_f1 = 0.8629951980792316
+2022-06-01 02:46:10,082   att_loss = 3.142548887546246
+2022-06-01 02:46:10,082   best_acc = 0.8382352941176471
+2022-06-01 02:46:10,082   cls_loss = 0.23951010406017303
+2022-06-01 02:46:10,082   eval_loss = 0.39319489683423725
+2022-06-01 02:46:10,082   f1 = 0.8877551020408163
+2022-06-01 02:46:10,082   global_step = 749
+2022-06-01 02:46:10,082   loss = 0.2773969338490413
+2022-06-01 02:46:10,082   rep_loss = 0.4090020954608917
+2022-06-01 02:46:10,362 all_student_weight:[0.21286535 0.26543837 0.24702744 0.27466884]
+2022-06-01 02:46:10,363 all_teacher_weight:[0.08658933 0.06256118 0.08356749 0.06641167 0.07153919 0.11718901
+ 0.0721723  0.07988647 0.09686081 0.074136   0.07306383 0.11602273]
+2022-06-01 02:46:18,553 ***** Running evaluation *****
+2022-06-01 02:46:18,554   Epoch = 7 iter 799 step
+2022-06-01 02:46:18,554   Num examples = 408
+2022-06-01 02:46:18,554   Batch size = 64
+2022-06-01 02:46:18,809 ***** Eval results *****
+2022-06-01 02:46:18,809   acc = 0.8259803921568627
+2022-06-01 02:46:18,809   acc_and_f1 = 0.8533263305322129
+2022-06-01 02:46:18,809   att_loss = 3.0552191734313965
+2022-06-01 02:46:18,809   cls_loss = 0.2560482621192932
+2022-06-01 02:46:18,809   eval_loss = 0.3971481238092695
+2022-06-01 02:46:18,809   f1 = 0.880672268907563
+2022-06-01 02:46:18,809   global_step = 799
+2022-06-01 02:46:18,809   loss = 0.29290637373924255
+2022-06-01 02:46:18,809   rep_loss = 0.4033254086971283
+2022-06-01 02:46:19,075 all_student_weight:[0.20981402 0.26854271 0.25378223 0.26786104]
+2022-06-01 02:46:19,076 all_teacher_weight:[0.08641618 0.0611034  0.08328165 0.06567716 0.07175192 0.11608112
+ 0.07332345 0.08132123 0.09936361 0.0764997  0.07371849 0.11146209]
+2022-06-01 02:46:27,239 ***** Running evaluation *****
+2022-06-01 02:46:27,239   Epoch = 7 iter 849 step
+2022-06-01 02:46:27,239   Num examples = 408
+2022-06-01 02:46:27,239   Batch size = 64
+2022-06-01 02:46:27,495 ***** Eval results *****
+2022-06-01 02:46:27,495   acc = 0.8284313725490197
+2022-06-01 02:46:27,495   acc_and_f1 = 0.8550940646528882
+2022-06-01 02:46:27,495   att_loss = 3.1213209956300023
+2022-06-01 02:46:27,495   cls_loss = 0.2409557022300421
+2022-06-01 02:46:27,495   eval_loss = 0.4025707542896271
+2022-06-01 02:46:27,495   f1 = 0.8817567567567567
+2022-06-01 02:46:27,496   global_step = 849
+2022-06-01 02:46:27,496   loss = 0.27850645488383724
+2022-06-01 02:46:27,496   rep_loss = 0.40226254626816393
+2022-06-01 02:46:27,764 all_student_weight:[0.20888916 0.26644444 0.25261486 0.27205155]
+2022-06-01 02:46:27,764 all_teacher_weight:[0.08644253 0.06041695 0.08316241 0.06522003 0.07043866 0.11428252
+ 0.07289641 0.08039249 0.09959496 0.07619965 0.07434898 0.11660441]
+2022-06-01 02:46:35,926 ***** Running evaluation *****
+2022-06-01 02:46:35,927   Epoch = 7 iter 899 step
+2022-06-01 02:46:35,927   Num examples = 408
+2022-06-01 02:46:35,927   Batch size = 64
+2022-06-01 02:46:36,180 ***** Eval results *****
+2022-06-01 02:46:36,180   acc = 0.821078431372549
+2022-06-01 02:46:36,180   acc_and_f1 = 0.8508010814800551
+2022-06-01 02:46:36,180   att_loss = 3.1025233221526194
+2022-06-01 02:46:36,180   cls_loss = 0.24018789267185892
+2022-06-01 02:46:36,180   eval_loss = 0.40836781689098905
+2022-06-01 02:46:36,180   f1 = 0.8805237315875613
+2022-06-01 02:46:36,180   global_step = 899
+2022-06-01 02:46:36,180   loss = 0.2775110559593333
+2022-06-01 02:46:36,180   rep_loss = 0.40058833183628495
+2022-06-01 02:46:36,450 all_student_weight:[0.20992498 0.26617002 0.25312777 0.27077723]
+2022-06-01 02:46:36,451 all_teacher_weight:[0.0858698  0.06085159 0.08277711 0.06583026 0.07119548 0.11269372
+ 0.07378342 0.08047193 0.09869628 0.07733291 0.07601437 0.11448311]
+2022-06-01 02:46:44,614 ***** Running evaluation *****
+2022-06-01 02:46:44,615   Epoch = 8 iter 949 step
+2022-06-01 02:46:44,615   Num examples = 408
+2022-06-01 02:46:44,615   Batch size = 64
+2022-06-01 02:46:44,867 ***** Eval results *****
+2022-06-01 02:46:44,867   acc = 0.821078431372549
+2022-06-01 02:46:44,868   acc_and_f1 = 0.8502086371738777
+2022-06-01 02:46:44,868   att_loss = 3.0836139369655298
+2022-06-01 02:46:44,868   cls_loss = 0.23584888875484467
+2022-06-01 02:46:44,868   eval_loss = 0.40603972332818167
+2022-06-01 02:46:44,868   f1 = 0.8793388429752065
+2022-06-01 02:46:44,868   global_step = 949
+2022-06-01 02:46:44,868   loss = 0.2728891485446208
+2022-06-01 02:46:44,868   rep_loss = 0.3963211807044777
+2022-06-01 02:46:45,134 all_student_weight:[0.20974012 0.27061999 0.25276373 0.26687616]
+2022-06-01 02:46:45,134 all_teacher_weight:[0.08577196 0.06040671 0.08315502 0.06587134 0.0717775  0.11600587
+ 0.07464292 0.08076898 0.0969742  0.07777367 0.07489556 0.11195626]
+2022-06-01 02:46:53,299 ***** Running evaluation *****
+2022-06-01 02:46:53,299   Epoch = 8 iter 999 step
+2022-06-01 02:46:53,299   Num examples = 408
+2022-06-01 02:46:53,299   Batch size = 64
+2022-06-01 02:46:53,553 ***** Eval results *****
+2022-06-01 02:46:53,554   acc = 0.821078431372549
+2022-06-01 02:46:53,554   acc_and_f1 = 0.8504074199696352
+2022-06-01 02:46:53,554   att_loss = 3.099451706327241
+2022-06-01 02:46:53,554   cls_loss = 0.2377080220258099
+2022-06-01 02:46:53,554   eval_loss = 0.4075816103390285
+2022-06-01 02:46:53,554   f1 = 0.8797364085667215
+2022-06-01 02:46:53,554   global_step = 999
+2022-06-01 02:46:53,554   loss = 0.27490355023022356
+2022-06-01 02:46:53,554   rep_loss = 0.39570235794988173
+2022-06-01 02:46:53,821 all_student_weight:[0.21141065 0.26607082 0.25234188 0.27017664]
+2022-06-01 02:46:53,822 all_teacher_weight:[0.08527752 0.06103692 0.08310518 0.06633816 0.07123254 0.11443252
+ 0.07416983 0.08125369 0.09964003 0.07550724 0.07299901 0.11500737]
+2022-06-01 02:47:02,004 ***** Running evaluation *****
+2022-06-01 02:47:02,004   Epoch = 9 iter 1049 step
+2022-06-01 02:47:02,004   Num examples = 408
+2022-06-01 02:47:02,004   Batch size = 64
+2022-06-01 02:47:02,724 ***** Eval results *****
+2022-06-01 02:47:02,724   acc = 0.8333333333333334
+2022-06-01 02:47:02,724   acc_and_f1 = 0.8594276094276094
+2022-06-01 02:47:02,724   att_loss = 3.087315082550049
+2022-06-01 02:47:02,724   cls_loss = 0.23714307080144467
+2022-06-01 02:47:02,724   eval_loss = 0.409827070576804
+2022-06-01 02:47:02,724   f1 = 0.8855218855218856
+2022-06-01 02:47:02,724   global_step = 1049
+2022-06-01 02:47:02,724   loss = 0.27414701425510907
+2022-06-01 02:47:02,724   rep_loss = 0.3919646027295486
+2022-06-01 02:47:02,999 all_student_weight:[0.21164405 0.26784429 0.25148284 0.26902881]
+2022-06-01 02:47:02,999 all_teacher_weight:[0.08603419 0.06121514 0.08236063 0.06666044 0.07221311 0.11503809
+ 0.07442145 0.08094375 0.09732514 0.07665319 0.07299212 0.11414274]
+2022-06-01 02:47:11,160 ***** Running evaluation *****
+2022-06-01 02:47:11,160   Epoch = 9 iter 1099 step
+2022-06-01 02:47:11,160   Num examples = 408
+2022-06-01 02:47:11,161   Batch size = 64
+2022-06-01 02:47:11,901 ***** Eval results *****
+2022-06-01 02:47:11,901   acc = 0.821078431372549
+2022-06-01 02:47:11,901   acc_and_f1 = 0.8504074199696352
+2022-06-01 02:47:11,901   att_loss = 3.0919777203912604
+2022-06-01 02:47:11,901   cls_loss = 0.23884489989444002
+2022-06-01 02:47:11,901   eval_loss = 0.4061021293912615
+2022-06-01 02:47:11,902   f1 = 0.8797364085667215
+2022-06-01 02:47:11,902   global_step = 1099
+2022-06-01 02:47:11,902   loss = 0.2758757390388071
+2022-06-01 02:47:11,902   rep_loss = 0.39074156668088206
+2022-06-01 02:47:12,176 all_student_weight:[0.21063206 0.26977654 0.25255268 0.26703871]
+2022-06-01 02:47:12,176 all_teacher_weight:[0.08590065 0.06069755 0.08185858 0.06636382 0.07172502 0.11567621
+ 0.07460264 0.08224765 0.09841181 0.07576099 0.07346871 0.11328635]

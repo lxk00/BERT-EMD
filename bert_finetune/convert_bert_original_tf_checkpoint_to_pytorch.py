@@ -23,8 +23,8 @@ import sys
 import os
 sys.path.append(os.path.abspath(os.path.join(os.getcwd(), "..")))
 
-from bert_fineturn.configuration_bert import BertConfig
-from bert_fineturn.modeling_bert import BertForPreTraining, load_tf_weights_in_bert, BertForSequenceClassification
+from bert_finetune.configuration_bert import BertConfig
+from bert_finetune.modeling_bert import BertForPreTraining, load_tf_weights_in_bert, BertForSequenceClassification
 
 logging.basicConfig(level=logging.INFO)
 

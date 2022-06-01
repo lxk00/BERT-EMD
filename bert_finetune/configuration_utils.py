@@ -22,7 +22,7 @@ import logging
 import os
 from typing import Dict, Optional, Tuple
 
-from bert_fineturn.file_utils import CONFIG_NAME, cached_path, hf_bucket_url, is_remote_url
+from bert_finetune.file_utils import CONFIG_NAME, cached_path, hf_bucket_url, is_remote_url
 
 
 logger = logging.getLogger(__name__)
